@@ -3,17 +3,18 @@ import ProfilePic from "../images/profile.jpeg";
 
 function HomePage() {
   return (
-    <div className="flex justify-between rounded-r-[48px] rounded-l-[200px] bg-red-100">
+    <div className="flex justify-between mt-24 ring-[0.03rem] ring-stone-700 shadow-lg shadow-stone-700 rounded-r-[48px] rounded-l-[200px] bg-strong">
       <Image
         src={ProfilePic}
         alt="ProfilePicture"
-        className="rounded-full w-64 h-64"
+        className="rounded-full w-72 h-72"
       />
-      <div className="p-2">
-        <p className="bg-blue-300">Hello, world!</p>
-        <p className="bg-blue-200">
-          My name is Matheus, and I like to solve my problems by building some
-          apps.
+      <div className="p-2 mx-4">
+        <p className="text-4xl mt-[5rem] mb-2 text-super-weak">Hello, world!</p>
+        <p className="text-xl text-weak">I'm Matheus Sant'Anna,</p>
+        <p className="text-xl text-weak">
+          a <strong>FullStack Developer</strong> that likes to solve problems by
+          building apps.
         </p>
       </div>
     </div>

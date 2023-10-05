@@ -8,7 +8,7 @@ interface DarkModeToggleProps {
 }
 
 function DarkModeToggle(props: DarkModeToggleProps) {
-  const [theme, setTheme] = useState("Sun");
+  const [theme, setTheme] = useState("Moon");
   return (
     <button
       className={props.className}
