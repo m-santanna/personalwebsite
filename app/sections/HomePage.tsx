@@ -3,7 +3,7 @@ import ProfilePic from "../images/profile.jpeg";
 
 function HomePage() {
   return (
-    <div className="flex justify-between mt-24 ring-[0.03rem] ring-stone-700 shadow-lg shadow-stone-700 rounded-r-[48px] rounded-l-[200px] bg-strong">
+    <div className="flex justify-between mt-32 ring-[0.03rem] ring-stone-700 shadow-lg shadow-stone-700 rounded-r-[48px] rounded-l-[200px] bg-strong">
       <Image
         src={ProfilePic}
         alt="ProfilePicture"

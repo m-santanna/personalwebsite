@@ -27,3 +27,20 @@
 .text-strong {
     @apply text-stone-800;
 }
+
+
+.heading {
+    @apply text-super-weak m-[5.25rem] text-[2.75rem] text-center;
+}
+
+.subheading {
+    @apply text-super-weak text-3xl;
+}
+
+.text {
+    @apply text-weak text-xl;
+}
+
+.w-body {
+    @apply w-[600px];
+}
