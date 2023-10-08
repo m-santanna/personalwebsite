@@ -11,7 +11,7 @@ function HomePage() {
       />
       <div className="p-2 mx-4">
         <p className="text-4xl mt-[5rem] mb-2 text-super-weak">Hello, world!</p>
-        <p className="text-xl text-weak">I'm Matheus Sant'Anna,</p>
+        <p className="text-xl text-weak">I&#39;m Matheus Sant&#39;Anna,</p>
         <p className="text-xl text-weak">
           a <strong>FullStack Developer</strong> that likes to solve problems by
           building apps.

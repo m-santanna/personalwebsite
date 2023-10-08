@@ -35,7 +35,7 @@ function About() {
             className="text mb-2 hover:underline"
             target="_blank"
           >
-            CS50's Introduction to Computer Science
+            CS50&#39;s Introduction to Computer Science
           </Link>
           <ContactLinks />
         </div>
@@ -45,7 +45,7 @@ function About() {
             className="text mb-8 hover:underline"
             target="_blank"
           >
-            CS50's Web Programming with Python and JavaScript
+            CS50&#39;s Web Programming with Python and JavaScript
           </Link>
           <ContactLinks />
         </div>
