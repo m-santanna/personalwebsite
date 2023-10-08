@@ -1,6 +1,7 @@
 import Link from "next/link";
 import RegularTextSubheading from "../components/RegularTextSubheading";
 import ContactLinks from "../icons/ContactLinks";
+
 function About() {
   return (
     <div className="w-body">

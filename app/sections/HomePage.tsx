@@ -8,6 +8,7 @@ function HomePage() {
         src={ProfilePic}
         alt="ProfilePicture"
         className="rounded-full w-72 h-72"
+        priority={true}
       />
       <div className="p-2 mx-4">
         <p className="text-4xl mt-[5rem] mb-2 text-super-weak">Hello, world!</p>

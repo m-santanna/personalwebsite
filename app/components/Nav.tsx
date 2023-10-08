@@ -11,9 +11,9 @@ export default function Nav() {
       >
         Matheus.
       </Link>
-      <div>
+      <div className="flex">
         <DarkModeToggle className="pr-4 text-super-weak" />
-        <Menu className="pr-2 text-super-weak" />
+        <Menu className="pr-2 block sm:hidden text-super-weak" />
       </div>
     </nav>
   );

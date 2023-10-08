@@ -1,4 +1,3 @@
-import ContactLinks from "../icons/ContactLinks";
 import ContactsSubheading from "../components/ContactsSubheading";
 
 function Contacts() {
