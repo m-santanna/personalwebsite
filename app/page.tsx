@@ -7,7 +7,7 @@ import ScrollDown from "./components/ScrollDown";
 
 export default function Home() {
   return (
-    <div className="bg-zinc-800">
+    <div className="bg-white dark:bg-zinc-800">
       <header id="NavBar" className="sticky top-0 z-50">
         <Nav />
       </header>

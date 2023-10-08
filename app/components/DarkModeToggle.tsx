@@ -1,22 +1,26 @@
 "use client";
 import Sun from "../icons/Sun";
 import Moon from "../icons/Moon";
-import { useState } from "react";
-
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 interface DarkModeToggleProps {
   className?: string;
 }
 
 function DarkModeToggle(props: DarkModeToggleProps) {
-  const [theme, setTheme] = useState("Moon");
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
   return (
     <button
       className={props.className}
       onClick={() => {
-        theme === "Sun" ? setTheme("Moon") : setTheme("Sun");
+        resolvedTheme === "dark" ? setTheme("light") : setTheme("dark");
       }}
     >
-      {theme === "Sun" ? <Sun /> : <Moon />}
+      {resolvedTheme === "dark" ? <Sun /> : <Moon />}
     </button>
   );
 }
