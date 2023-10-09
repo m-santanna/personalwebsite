@@ -1,10 +1,10 @@
-interface MenuProps {
+interface CloseProps {
   className?: string;
   classNameImg?: string;
   onClick?: () => void;
 }
 
-function Menu(props: MenuProps) {
+function Close(props: CloseProps) {
   return (
     <button className={props.className} onClick={props.onClick}>
       <svg
@@ -13,16 +13,16 @@ function Menu(props: MenuProps) {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={props.classNameImg + "w-7 h-7"}
+        className={"w-7 h-7" + props.classNameImg}
       >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+          d="M6 18L18 6M6 6l12 12"
         />
       </svg>
     </button>
   );
 }
 
-export default Menu;
+export default Close;
