@@ -36,4 +36,4 @@ This section contains links to my GitHub, Linkedin and Email accounts, allowing 
 
 ### How to connect
 
-You will be able to access this project by visiting: m-santanna.me
+You will be able to access this project by visiting: https://m-santanna.me/ or https://personalwebsite-matheusss100503s-projects.vercel.app/
