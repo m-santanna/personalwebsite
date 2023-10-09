@@ -33,3 +33,7 @@ This section is responsible to showcase all the projects done while taking CS50W
 #### ContactSection
 
 This section contains links to my GitHub, Linkedin and Email accounts, allowing any visitors to contact me.
+
+### How to connect
+
+You will be able to access this project by visiting: m-santanna.me
