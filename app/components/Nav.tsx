@@ -1,6 +1,5 @@
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
-import Hamburger from "./Hamburger";
 
 export default function Nav() {
   return (
@@ -24,7 +23,6 @@ export default function Nav() {
           </Link>
         </div>
         <DarkModeToggle className="pr-4 text-super-weak" />
-        <Hamburger className="mt-2 block sm:hidden text-super-weak" />
       </div>
     </nav>
   );
