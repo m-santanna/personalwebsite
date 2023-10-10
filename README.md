@@ -41,3 +41,7 @@ https://youtu.be/ShjJUT0DDXg
 ### How to connect yourself
 
 You will be able to access this project by visiting: https://m-santanna.me/
+Optionally, you can clone this repository to your local machine. And run the following commands:
+"npm install"
+"npm run dev"
+And open a tab on your favorite browser on: http://localhost:3000
