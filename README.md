@@ -34,6 +34,10 @@ This section is responsible to showcase all the projects done while taking CS50W
 
 This section contains links to my GitHub, Linkedin and Email accounts, allowing any visitors to contact me.
 
-### How to connect
+### Youtube Video Showcasing the app
+
+https://youtu.be/ShjJUT0DDXg
+
+### How to connect yourself
 
 You will be able to access this project by visiting: https://m-santanna.me/
