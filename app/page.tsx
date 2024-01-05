@@ -3,7 +3,6 @@ import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Contacts from "./sections/Contacts";
 import HomePage from "./sections/HomePage";
-import ScrollDown from "./components/ScrollDown";
 
 export default function Home() {
   return (
@@ -14,16 +13,16 @@ export default function Home() {
       <section id="HomePage" className="flex justify-center">
         <HomePage />
       </section>
-      <section id="ScrollDown" className="flex justify-center">
-        <ScrollDown />
-      </section>
-      <section id="About" className="flex justify-center">
+      <section id="About" className="flex justify-center bg-weak">
         <About />
       </section>
       <section id="Projects" className="flex justify-center">
         <Projects />
       </section>
-      <section id="Contacts" className="flex justify-center">
+      <section
+        id="Contacts"
+        className="flex justify-center bg-weak h-[calc(100vh-80px)]"
+      >
         <Contacts />
       </section>
     </div>

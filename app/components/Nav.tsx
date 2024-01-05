@@ -3,7 +3,7 @@ import DarkModeToggle from "./DarkModeToggle";
 
 export default function Nav() {
   return (
-    <nav className="flex w-full justify-between items-center p-4 bg-super-strong border border-x-0 border-t-0 border-stone-800">
+    <nav className="flex w-full justify-between items-center p-4 h-20 bg-strong border border-x-0 border-t-0 border-stone-800 dark:border-gray-400">
       <Link
         href={"#HomePage"}
         className="text-super-weak first-letter:text-gray-800 dark:first-letter:text-stone-200 text-2xl"

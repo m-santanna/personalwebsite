@@ -8,16 +8,19 @@ function About() {
       <h1 className="heading">About me!</h1>
       <RegularTextSubheading
         title="Languages"
-        text="JavaScript, TypeScript, Python, Lua"
+        text="JavaScript, TypeScript, Java, Python, Lua, SQL, C"
       />
       <RegularTextSubheading
         title="Frontend"
-        text="HTML, CSS, React, Next.js 13, TailwindCSS, Bootstrap"
+        text="HTML, CSS, React, Next.js 14, TailwindCSS, Bootstrap"
       />
-      <RegularTextSubheading title="Backend" text="Flask, Django, Express.js" />
+      <RegularTextSubheading
+        title="Backend"
+        text="Flask, Django, Express.js, Next.js (Server Actions)"
+      />
       <RegularTextSubheading
         title="Databases"
-        text="PostgreSQL, SQLite3, MySQL, MongoDB (Learning)"
+        text="PostgreSQL, SQLite3, MySQL, MongoDB"
       />
       <RegularTextSubheading
         title="Others"
@@ -27,6 +30,7 @@ function About() {
         title="Education"
         text="Master's degree in Biomedical Engineering at IST-ULisboa due to Aug-2026"
       />
+
       <h3 className="subheading mb-4">CS certificates</h3>
       <div className="flex flex-col">
         <div className="flex">

@@ -23,6 +23,12 @@ function Contacts() {
           href="https://www.github.com/matheusss100503"
           icon="contactLinks"
         />
+        <ContactsSubheading
+          title="Resume"
+          anchortext="Here"
+          href="/resume"
+          icon="contactLinks"
+        />
       </div>
     </div>
   );
