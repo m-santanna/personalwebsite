@@ -3,7 +3,9 @@ import ContactsSubheading from "../components/ContactsSubheading";
 function Contacts() {
   return (
     <div className="w-body">
-      <h1 className="heading">Contact me!</h1>
+      <h1 className="text-super-weak font-semibold m-[3.5rem] text-[2.75rem] text-center sm:heading">
+        Contact me!
+      </h1>
       <div>
         <ContactsSubheading
           title="Email"
