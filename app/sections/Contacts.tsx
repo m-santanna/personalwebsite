@@ -21,8 +21,8 @@ function Contacts() {
         />
         <ContactsSubheading
           title="GitHub"
-          anchortext="matheusss100503"
-          href="https://www.github.com/matheusss100503"
+          anchortext="m-santanna"
+          href="https://github.com/m-santanna"
           icon="contactLinks"
         />
         <ContactsSubheading

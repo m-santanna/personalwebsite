@@ -24,7 +24,7 @@ function About() {
       />
       <RegularTextSubheading
         title="Others"
-        text="Linux/Unix, Vercel, NeonDB, Git, GitHub"
+        text="Expo/ReactNative, Electron.js, Linux/Unix, Vercel, NeonDB, Git, GitHub"
       />
       <RegularTextSubheading
         title="Education"
