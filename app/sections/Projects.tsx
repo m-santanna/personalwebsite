@@ -38,7 +38,7 @@ function Projects() {
         title="FitnessTrack"
         text="It was always complicated to properly track my workouts, so I decided to create a solution. This personal project was built entirely with Next.js 14 and TailwindCSS. Utilizing Next.js's server actions, NeonDB as the cloud platform for the PostgreSQL database, Clerk's API for the authentication processes, and Prisma as the ORM used for the database models and migrations, this project allows users to track their workouts, on a daily basis. Even though, mobile responsiveness was only considered at the end of the project development, the upgraded version of this app (ApolloTrack), with more features, is currently being built."
         href="https://github.com/m-santanna/fitnesstrackv2"
-        date="Jan 2024"
+        date="Nov 2023"
       />
       <ProjectSubheading
         title="SpotReviewer"

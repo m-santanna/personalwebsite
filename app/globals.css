@@ -3,43 +3,46 @@
 @tailwind utilities;
 
 .bg-weak {
-    @apply bg-gray-100 dark:bg-zinc-700;
+  @apply bg-gray-100 dark:bg-zinc-700;
 }
 
 .bg-strong {
-    @apply bg-white dark:bg-zinc-800;
+  @apply bg-white dark:bg-zinc-800;
 }
 
 .bg-navbar {
-    @apply bg-white dark:bg-zinc-900;
+  @apply bg-white dark:bg-zinc-900;
 }
 
 .text-super-weak {
-    @apply text-gray-950 dark:text-stone-200;
+  @apply text-gray-950 dark:text-stone-200;
 }
 .text-weak {
-    @apply text-gray-800 dark:text-stone-400;
+  @apply text-gray-800 dark:text-stone-400;
 }
 .text-mid {
-    @apply text-gray-600 dark:text-stone-600;
+  @apply text-gray-600 dark:text-stone-600;
 }
 .text-strong {
-    @apply text-gray-400 dark:text-stone-800;
+  @apply text-gray-400 dark:text-stone-800;
 }
 
+.text-gradient {
+  @apply bg-gradient-to-b from-amber-500 to-amber-800 text-transparent bg-clip-text;
+}
 
 .heading {
-    @apply text-super-weak font-semibold m-[5.25rem] text-[2.75rem] text-center;
+  @apply text-gradient font-semibold m-[5.25rem] text-[2.75rem] text-center;
 }
 
 .subheading {
-    @apply text-super-weak font-medium text-xl md:text-3xl;
+  @apply text-super-weak font-medium text-xl md:text-3xl;
 }
 
 .text {
-    @apply text-weak text-lg md:text-xl;
+  @apply text-weak text-lg md:text-xl;
 }
 
 .w-body {
-    @apply w-[320px] mx-16 sm:w-[650px] md:w-[750px];
+  @apply w-[320px] mx-16 sm:w-[650px] md:w-[750px];
 }

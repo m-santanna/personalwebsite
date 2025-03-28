@@ -3,7 +3,7 @@ import ContactsSubheading from "../components/ContactsSubheading";
 function Contacts() {
   return (
     <div className="w-body">
-      <h1 className="text-super-weak font-semibold m-[3.5rem] text-[2.75rem] text-center sm:heading">
+      <h1 className="text-gradient font-semibold m-[3.5rem] text-[2.75rem] text-center">
         Contact me!
       </h1>
       <div>
