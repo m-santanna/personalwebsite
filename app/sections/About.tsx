@@ -28,7 +28,7 @@ function About() {
       />
       <RegularTextSubheading
         title="Education"
-        text="Master's degree in Biomedical Engineering at IST-ULisboa due to Aug-2026"
+        text="Bachelor's degree in Computer Science at FCT-UNL due to Jul-2027"
       />
 
       <h3 className="subheading mb-4">CS certificates</h3>
@@ -36,20 +36,10 @@ function About() {
         <div className="flex">
           <Link
             href={"/cs50x"}
-            className="text mb-2 hover:underline"
-            target="_blank"
-          >
-            CS50&#39;s Introduction to Computer Science
-          </Link>
-          <ContactLinks />
-        </div>
-        <div className="flex">
-          <Link
-            href={"/cs50web"}
             className="text mb-8 hover:underline"
             target="_blank"
           >
-            CS50&#39;s Web Programming with Python and JavaScript
+            CS50&#39;s Introduction to Computer Science
           </Link>
           <ContactLinks />
         </div>
