@@ -1,6 +1,6 @@
 "use client";
-import Sun from "../icons/Sun";
-import Moon from "../icons/Moon";
+import Sun from "./icons/Sun";
+import Moon from "./icons/Moon";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 interface DarkModeToggleProps {

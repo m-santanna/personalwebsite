@@ -1,4 +1,4 @@
-import ProjectSubheading from "../components/ProjectSubheading";
+import ProjectSubheading from "@/components/ProjectSubheading";
 
 function Projects() {
   return (

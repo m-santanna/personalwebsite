@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Close from "../icons/Close";
-import Menu from "../icons/Menu";
+import Close from "./icons/Close";
+import Menu from "./icons/Menu";
 
 interface HamburgerProps {
   className?: string;

@@ -46,3 +46,9 @@
 .w-body {
   @apply w-[320px] mx-16 sm:w-[650px] md:w-[750px];
 }
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}

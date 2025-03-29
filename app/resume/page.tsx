@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../images/resume.png";
+import resume from "@/images/resume.png";
 import Image from "next/image";
 
 const ResumePage = () => {

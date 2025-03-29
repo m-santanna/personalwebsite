@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ContactLinks from "../icons/ContactLinks";
+import ContactLinks from "./icons/ContactLinks";
 
 interface ProjectSubheadingProps {
   title: string;
@@ -12,7 +12,7 @@ function ProjectSubheading(props: ProjectSubheadingProps) {
   return (
     <>
       <div className="mb-2">
-        <div className="flex">
+        <div className="flex items-center">
           <Link
             className="subheading hover:underline"
             href={props.href}

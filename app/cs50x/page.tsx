@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import cs50x from "../images/CS50x.png";
+import cs50x from "@/images/CS50x.png";
 
 function page() {
   return (

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import RegularTextSubheading from "../components/RegularTextSubheading";
-import ContactLinks from "../icons/ContactLinks";
+import RegularTextSubheading from "@/components/RegularTextSubheading";
+import ContactLinks from "../../components/icons/ContactLinks";
 
 function About() {
   return (

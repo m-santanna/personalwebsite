@@ -1,4 +1,4 @@
-import ContactsSubheading from "../components/ContactsSubheading";
+import ContactsSubheading from "@/components/ContactsSubheading";
 
 function Contacts() {
   return (

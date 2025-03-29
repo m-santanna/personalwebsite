@@ -1,6 +1,6 @@
 import React from "react";
-import Email from "../icons/Email";
-import ContactLinks from "../icons/ContactLinks";
+import Email from "./icons/Email";
+import ContactLinks from "./icons/ContactLinks";
 import Link from "next/link";
 
 interface ContactsSubheadingProps {
@@ -13,13 +13,13 @@ interface ContactsSubheadingProps {
 
 function ContactsSubheading(props: ContactsSubheadingProps) {
   return (
-    <>
-      <h3 className="subheading mb-4">{props.title}</h3>
-      <div className="flex">
+    <div className="flex flex-col gap-2 mb-8">
+      <h3 className="subheading">{props.title}</h3>
+      <div className="flex items-center">
         <Link
           href={props.href}
           target="_blank"
-          className="text mb-8 hover:underline"
+          className="text hover:underline"
         >
           {props.anchortext}
         </Link>
@@ -29,7 +29,7 @@ function ContactsSubheading(props: ContactsSubheadingProps) {
           <ContactLinks className={props.iconClassName} />
         )}
       </div>
-    </>
+    </div>
   );
 }
 
