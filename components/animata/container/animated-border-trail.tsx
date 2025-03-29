@@ -38,13 +38,15 @@ export default function AnimatedBorderTrail({
     >
       <div
         className="absolute inset-0 h-full w-full animate-trail"
-        style={{
-          "--duration": duration ?? "10s",
-          "--angle": "0deg",
-          background: `conic-gradient(from var(--angle) at 50% 50%, transparent ${
-            100 - sizes[trailSize]
-          }%, ${trailColor})`,
-        }}
+        style={
+          {
+            "--duration": duration ?? "10s",
+            "--angle": "0deg",
+            background: `conic-gradient(from var(--angle) at 50% 50%, transparent ${
+              100 - sizes[trailSize]
+            }%, ${trailColor})`,
+          } as React.CSSProperties
+        }
       />
       <div
         className={cn(
