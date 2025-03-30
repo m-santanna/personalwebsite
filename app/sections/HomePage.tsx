@@ -4,7 +4,7 @@ import AnimatedBorderTrail from "@/components/animata/container/animated-border-
 
 function HomePage() {
   return (
-    <AnimatedBeam backgroundClassName="from-slate-800 to-indigo-900">
+    <AnimatedBeam backgroundClassName="from-slate-500 to-indigo-600 dark:from-slate-800 dark:to-indigo-900">
       <section
         id="HomePage"
         className="w-screen h-[calc(90vh-80px)] sm:h-[calc(100vh-80px)] flex flex-col gap-[10vh] justify-center items-center"
