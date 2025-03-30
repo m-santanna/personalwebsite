@@ -19,9 +19,14 @@ const config: Config = {
           "0%": { "--angle": "0deg" },
           "100%": { "--angle": "360deg" },
         },
+        meteor: {
+          "0%": { transform: "translateY(-20%) translateX(-50%)" },
+          "100%": { transform: "translateY(300%) translateX(-50%)" },
+        },
       },
       animation: {
         trail: "trail var(--duration) linear infinite",
+        meteor: "meteor var(--duration) var(--delay) ease-in-out infinite",
       },
     },
   },

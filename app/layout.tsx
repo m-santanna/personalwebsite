@@ -6,8 +6,8 @@ import Providers from "./Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "PersonalWebsite created using Next.js 13",
+  title: "Matheus",
+  description: "Matheus Sant'Anna's Personal Portfolio Website",
 };
 
 export default function RootLayout({

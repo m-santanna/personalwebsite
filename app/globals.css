@@ -3,28 +3,31 @@
 @tailwind utilities;
 
 .bg-weak {
-  @apply bg-gray-100 dark:bg-zinc-700;
+  @apply bg-gray-300 dark:bg-zinc-800;
 }
 
 .bg-strong {
-  @apply bg-white dark:bg-zinc-800;
+  @apply bg-[#d4cfc4] dark:bg-slate-800;
 }
 
 .bg-navbar {
-  @apply bg-white dark:bg-zinc-900;
+  @apply bg-gray-400 dark:bg-zinc-900;
 }
 
 .text-super-weak {
-  @apply text-gray-950 dark:text-stone-200;
+  @apply text-gray-900 dark:text-stone-200;
 }
+
 .text-weak {
-  @apply text-gray-800 dark:text-stone-400;
+  @apply text-gray-700 dark:text-stone-400;
 }
+
 .text-mid {
-  @apply text-gray-600 dark:text-stone-600;
+  @apply text-gray-500 dark:text-stone-600;
 }
+
 .text-strong {
-  @apply text-gray-400 dark:text-stone-800;
+  @apply text-gray-500 dark:text-stone-800;
 }
 
 .text-gradient {
@@ -32,7 +35,7 @@
 }
 
 .heading {
-  @apply text-gradient font-semibold m-[5.25rem] text-[2.75rem] text-center;
+  @apply text-gradient font-semibold m-[3.5rem] text-[2.75rem] text-center;
 }
 
 .subheading {
