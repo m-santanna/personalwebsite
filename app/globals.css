@@ -2,16 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-weak {
-  @apply bg-gray-300 dark:bg-zinc-800;
-}
-
 .bg-strong {
-  @apply bg-[#d4cfc4] dark:bg-slate-800;
+  @apply bg-gray-100 dark:bg-zinc-800;
 }
 
 .bg-navbar {
-  @apply bg-gray-400 dark:bg-zinc-900;
+  @apply bg-white dark:bg-zinc-900;
 }
 
 .text-super-weak {
@@ -31,7 +27,7 @@
 }
 
 .text-gradient {
-  @apply bg-gradient-to-b from-amber-500 to-amber-800 text-transparent bg-clip-text;
+  @apply bg-gradient-to-bl from-amber-500 to-amber-800 text-transparent bg-clip-text;
 }
 
 .heading {

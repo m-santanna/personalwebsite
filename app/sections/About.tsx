@@ -4,10 +4,7 @@ import ContactLinks from "../../components/icons/ContactLinks";
 
 function About() {
   return (
-    <section
-      id="About"
-      className="flex flex-col justify-center items-center bg-weak"
-    >
+    <section id="About" className="flex flex-col justify-center items-center">
       <h1 className="heading">About me!</h1>
       <div className="w-body">
         <RegularTextSubheading

@@ -9,21 +9,19 @@ export default function Nav() {
           href={"#HomePage"}
           className="text-super-weak first-letter:text-gray-800 dark:first-letter:text-stone-200 text-2xl"
         >
-          Matheus.
+          MSS.
         </Link>
-        <div className="flex">
-          <div className="hidden sm:block">
-            <Link href={"#About"} className="pr-4 text-super-weak">
-              About
-            </Link>
-            <Link href={"#Projects"} className="pr-4 text-super-weak">
-              Projects
-            </Link>
-            <Link href={"#Contacts"} className="pr-4 text-super-weak">
-              Contacts
-            </Link>
-          </div>
-          <DarkModeToggle className="pr-4 text-super-weak" />
+        <div className="flex gap-4">
+          <Link href={"#About"} className="text-super-weak">
+            About
+          </Link>
+          <Link href={"#Projects"} className="text-super-weak">
+            Projects
+          </Link>
+          <Link href={"#Contacts"} className="text-super-weak">
+            Contacts
+          </Link>
+          <DarkModeToggle className="text-super-weak" />
         </div>
       </nav>
     </header>

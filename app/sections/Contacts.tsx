@@ -4,7 +4,7 @@ function Contacts() {
   return (
     <section
       id="Contacts"
-      className="flex flex-col items-center bg-weak h-[calc(100vh-80px)]"
+      className="flex flex-col items-center h-[calc(100vh-80px)]"
     >
       <h1 className="heading">Contact me!</h1>
       <div className="w-body">
