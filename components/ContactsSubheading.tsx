@@ -19,7 +19,7 @@ function ContactsSubheading(props: ContactsSubheadingProps) {
         <Link
           href={props.href}
           target="_blank"
-          className="text hover:underline"
+          className="text underline-animation"
         >
           {props.anchortext}
         </Link>

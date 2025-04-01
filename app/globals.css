@@ -46,6 +46,10 @@
   @apply w-[320px] mx-16 sm:w-[650px] md:w-[750px];
 }
 
+.underline-animation {
+  @apply underline decoration-transparent hover:decoration-current transition-colors duration-200;
+}
+
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;

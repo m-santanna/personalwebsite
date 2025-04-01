@@ -37,7 +37,7 @@ function About() {
           <div className="flex">
             <Link
               href={"/cs50x"}
-              className="text mb-8 hover:underline"
+              className="text mb-8 underline-animation"
               target="_blank"
             >
               CS50&#39;s Introduction to Computer Science

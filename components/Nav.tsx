@@ -7,16 +7,22 @@ export default function Nav() {
       <nav className="bg-navbar flex w-full justify-between items-center p-4 h-20 border border-x-0 border-t-0 border-stone-800 dark:border-gray-400">
         <Link
           href={"#HomePage"}
-          className="text-super-weak first-letter:text-gray-800 dark:first-letter:text-stone-200 text-2xl font-semibold"
+          className="text-super-weak text-2xl font-semibold hover:text-transparent bg-gradient-to-r from-amber-500 to-amber-800 bg-clip-text"
         >
           MSS.
         </Link>
         <div className="flex items-center gap-4 text-super-weak font-extralight text-sm sm:text-lg">
-          <Link href={"#About"}>About</Link>
-          <Link href={"#Projects"}>Projects</Link>
-          <Link href={"#Contacts"}>Contacts</Link>
+          <Link href={"#About"} className="underline-animation">
+            About
+          </Link>
+          <Link href={"#Projects"} className="underline-animation">
+            Projects
+          </Link>
+          <Link href={"#Contacts"} className="underline-animation">
+            Contacts
+          </Link>
         </div>
-        <DarkModeToggle />
+        <DarkModeToggle className="hover:animate-spin" />
       </nav>
     </header>
   );

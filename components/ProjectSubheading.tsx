@@ -14,7 +14,7 @@ function ProjectSubheading(props: ProjectSubheadingProps) {
       <div className="mb-2">
         <div className="flex items-center">
           <Link
-            className="subheading hover:underline"
+            className="subheading underline-animation"
             href={props.href}
             target="_blank"
           >
