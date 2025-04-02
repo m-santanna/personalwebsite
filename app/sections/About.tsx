@@ -1,6 +1,6 @@
 import Link from "next/link";
 import RegularTextSubheading from "@/components/RegularTextSubheading";
-import ContactLinks from "../../components/icons/ContactLinks";
+import { Link2 } from "lucide-react";
 
 function About() {
   return (
@@ -37,12 +37,12 @@ function About() {
           <div className="flex">
             <Link
               href={"/cs50x"}
-              className="text mb-8 underline-animation"
+              className="flex gap-2 items-center text mb-8 underline-animation"
               target="_blank"
             >
               CS50&#39;s Introduction to Computer Science
+              <Link2 className="size-8" />
             </Link>
-            <ContactLinks />
           </div>
         </div>
       </div>

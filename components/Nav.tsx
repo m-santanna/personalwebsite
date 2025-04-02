@@ -18,11 +18,8 @@ export default function Nav() {
           <Link href={"#Projects"} className="underline-animation">
             Projects
           </Link>
-          <Link href={"#Contacts"} className="underline-animation">
-            Contacts
-          </Link>
+          <DarkModeToggle className="hover:animate-spin" />
         </div>
-        <DarkModeToggle className="hover:animate-spin" />
       </nav>
     </header>
   );

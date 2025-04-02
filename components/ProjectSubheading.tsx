@@ -1,5 +1,5 @@
+import { Link2 } from "lucide-react";
 import Link from "next/link";
-import ContactLinks from "./icons/ContactLinks";
 
 interface ProjectSubheadingProps {
   title: string;
@@ -14,13 +14,13 @@ function ProjectSubheading(props: ProjectSubheadingProps) {
       <div className="mb-2">
         <div className="flex items-center">
           <Link
-            className="subheading underline-animation"
+            className="flex items-center gap-2 subheading underline-animation"
             href={props.href}
             target="_blank"
           >
             {props.title}
+            <Link2 className="size-8" />
           </Link>
-          <ContactLinks className="h-7 w-7" />
         </div>
         <p className="font-thin">{props.date}</p>
       </div>
