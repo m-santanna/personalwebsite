@@ -19,7 +19,7 @@ function ProjectSubheading(props: ProjectSubheadingProps) {
             target="_blank"
           >
             {props.title}
-            <Link2 className="size-8" />
+            <Link2 className="size-6 md:size-8" />
           </Link>
         </div>
         <p className="font-thin">{props.date}</p>
