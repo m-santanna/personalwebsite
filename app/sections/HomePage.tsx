@@ -62,7 +62,7 @@ function HomePage() {
             </div>
           </div>
         </AnimatedBorderTrail>
-        <ScrollDown />
+        <ScrollDown className="size-8 md:size-10" />
       </section>
     </AnimatedBeam>
   );
