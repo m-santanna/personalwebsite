@@ -31,7 +31,7 @@
 }
 
 .heading {
-  @apply text-gradient font-semibold m-[3.5rem] text-[2.75rem] text-center;
+  @apply text-gradient font-semibold m-[3.5rem] text-3xl md:text-5xl text-center;
 }
 
 .subheading {
@@ -39,7 +39,7 @@
 }
 
 .text {
-  @apply text-weak text-lg md:text-xl;
+  @apply text-weak text-base md:text-xl;
 }
 
 .w-body {

@@ -11,7 +11,7 @@ export default function Nav() {
         >
           MSS.
         </Link>
-        <div className="flex items-center gap-4 text-super-weak font-extralight text-sm sm:text-lg">
+        <div className="flex items-center gap-4 text-super-weak font-extralight text-base sm:text-lg">
           <Link href={"#About"} className="underline-animation">
             About
           </Link>
