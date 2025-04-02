@@ -18,7 +18,7 @@ function HomePage() {
           <h1 className="text-5xl font-semibold text-gradient text-center">
             Hello, world!
           </h1>
-          <p className="text-xl text-weak text-justify">
+          <p className="text-xl text-weak text-center sm:text-justify">
             I <span className="line-through">am a Software Engineer</span> am
             almost a Software Engineer
           </p>
