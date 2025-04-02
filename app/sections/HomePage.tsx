@@ -38,11 +38,11 @@ function HomePage() {
             <Image src={profileImage} alt="pfp" className="object-cover" />
           </div>
           <div className="h-full flex flex-col justify-center items-center gap-4 p-8">
-            <h1 className="text-5xl font-semibold text-gradient text-center">
+            <h1 className="text-2xl md:text-5xl font-semibold text-gradient text-center">
               Hello, world!
             </h1>
 
-            <p className="text-xl text-weak text-center md:text-justify">
+            <p className="text-md md:text-xl text-weak text-center md:text-justify">
               My name is Matheus. I am a Full-Stack Software Engineer based at
               Lisbon, Portugal.
             </p>
@@ -54,7 +54,7 @@ function HomePage() {
               ))}
               <Link
                 href="/resume"
-                className="flex justify-center items-center rounded-xl text-weak h-full border gap-1 px-2 hover:text-amber-500 hover:border-amber-800"
+                className="flex justify-center items-center rounded-xl text-weak text-md h-full border gap-1 px-2 hover:text-amber-500 hover:border-amber-800"
               >
                 Resume
                 <Link2 />
