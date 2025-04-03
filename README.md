@@ -1,14 +1,10 @@
-# Where to access
+# Thoughts
 
-https://m-santanna.me/
+This project was one of the first projects I built when I got started with React, Next.js and Tailwind 2 years ago.
+Since then, my skills have naturally grown, so has my desire to build something better than what I had before.
+This is the result I landed. Had some bumpy roads, had to learn some stuff, get some components here and there, 
+but the result ended up being pretty clean, if I may say so myself.
 
-# How to test locally
+# Where is it?
 
-run in terminal:
-
-```
-npm install
-npm run dev
-```
-
-open in browser: http://localhost:3000/
+https://m-santanna.vercel.app
