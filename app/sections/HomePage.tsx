@@ -34,8 +34,12 @@ function HomePage() {
           trailColor="rgb(245 158 11)"
           duration="7s"
         >
-          <div className="flex justify-center md:justify-normal max-h-1/2 md:min-h-full md:max-w-1/2">
-            <Image src={profileImage} alt="pfp" className="object-cover" />
+          <div className="group flex justify-center md:justify-normal max-h-1/2 md:min-h-full md:max-w-1/2">
+            <Image
+              src={profileImage}
+              alt="pfp"
+              className="object-cover group-hover:scale-105 transition-all duration-200 ease-in-out"
+            />
           </div>
           <div className="h-full flex flex-col justify-center items-center gap-4 p-8">
             <h1 className="text-3xl md:text-5xl font-semibold text-gradient text-center">
