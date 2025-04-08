@@ -5,12 +5,14 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
+import { LOGOS } from "@/components/icons/Logos";
 
 interface ProjectSubheadingProps {
   title: string;
   text: string;
   href: string;
   date: string;
+  isGithub: boolean;
   techstack?: {
     icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
     name: string;
@@ -28,7 +30,10 @@ function ProjectSubheading(props: ProjectSubheadingProps) {
             target="_blank"
           >
             {props.title}
-            <Link2 className="size-6 md:size-8 text-current group-hover:text-amber-600" />
+            {!props.isGithub && (
+              <Link2 className="size-6 md:size-8 text-current group-hover:text-amber-600" />
+            )}
+            {props.isGithub && <LOGOS.github />}
           </Link>
         </div>
         <p className="font-thin">{props.date}</p>

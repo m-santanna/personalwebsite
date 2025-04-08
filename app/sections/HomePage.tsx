@@ -52,8 +52,15 @@ function HomePage() {
             </p>
             <div className="flex gap-4 items-center">
               {contacts.map((contact) => (
-                <Link key={contact.name} href={contact.href} target="_blank">
-                  {<contact.logo className="size-8" />}
+                <Link
+                  key={contact.name}
+                  href={contact.href}
+                  target="_blank"
+                  className="group"
+                >
+                  {
+                    <contact.logo className="size-6 md:size-8 group-hover:scale-110 transition-all duration-100" />
+                  }
                 </Link>
               ))}
               <Link
