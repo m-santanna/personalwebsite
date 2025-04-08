@@ -42,11 +42,11 @@ function About() {
           <div className="flex">
             <Link
               href={"/cs50x"}
-              className="flex gap-2 items-center text mb-8 underline-animation"
+              className="group flex gap-2 items-center text mb-8 bg-gradient-to-bl from-amber-500 to-amber-800 hover:text-transparent bg-clip-text"
               target="_blank"
             >
               CS50&#39;s Introduction to CS
-              <Link2 className="size-6 md:size-8" />
+              <Link2 className="size-6 md:size-8 text-current group-hover:text-amber-600" />
             </Link>
           </div>
         </div>
