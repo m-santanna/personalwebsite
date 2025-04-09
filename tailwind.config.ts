@@ -15,6 +15,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       keyframes: {
+        "infinite-scroll": {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-50% - var(--gap)/2))",
+          },
+        },
         trail: {
           "0%": { "--angle": "0deg" },
           "100%": { "--angle": "360deg" },
@@ -25,6 +33,7 @@ const config: Config = {
         },
       },
       animation: {
+        "infinite-scroll": "infinite-scroll var(--duration) linear infinite",
         trail: "trail var(--duration) linear infinite",
         meteor: "meteor var(--duration) var(--delay) ease-in-out infinite",
       },
