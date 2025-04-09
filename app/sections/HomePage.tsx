@@ -30,7 +30,7 @@ function HomePage() {
       >
         <AnimatedBorderTrail
           className="bg-zinc-600"
-          contentClassName="max-w-[70vw] md:max-w-[80vw] max-h-[72vh] bg-strong flex flex-col md:flex-row items-center justify-center rounded-2xl"
+          contentClassName="max-w-[70vw] md:max-w-[80vw] lg:max-w-[75vw] max-h-[72vh] bg-strong flex flex-col md:flex-row items-center justify-center rounded-2xl"
           trailColor="rgb(245 158 11)"
           duration="7s"
         >

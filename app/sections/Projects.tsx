@@ -73,6 +73,7 @@ function Projects() {
             { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
             { icon: LOGOS.typescript, name: "TypeScript" },
             { icon: LOGOS.postgres, name: "PostgreSQL" },
+            { icon: LOGOS.clerk, name: "Clerk" },
             { icon: LOGOS.neondb, name: "NeonDB" },
             { icon: LOGOS.prisma, name: "Prisma" },
             { icon: LOGOS.vercel, name: "Vercel" },
