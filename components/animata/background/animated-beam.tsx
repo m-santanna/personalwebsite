@@ -9,14 +9,14 @@ function Beam({ index }: { index: number }) {
   return (
     <div
       className={cn("h-full animate-meteor", {
-        "[--duration:7s]": flag,
-        "[--duration:11s]": !flag,
+        "[--duration:6s]": flag,
+        "[--duration:10s]": !flag,
       })}
       style={
         {
           width: "6px",
           transform: "translateY(-20%)",
-          "--delay": `${index * 0.5}s`,
+          "--delay": `${index * 0.2}s`,
         } as React.CSSProperties
       }
     >
