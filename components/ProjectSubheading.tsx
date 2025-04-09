@@ -5,7 +5,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import { LOGOS } from "@/components/icons/Logos";
+import { LOGOS } from "@/components/Logos";
 
 interface ProjectSubheadingProps {
   title: string;
@@ -36,7 +36,7 @@ function ProjectSubheading(props: ProjectSubheadingProps) {
             {props.isGithub && <LOGOS.github />}
           </Link>
         </div>
-        <p className="font-thin">{props.date}</p>
+        <p className="font-thin text-super-weak">{props.date}</p>
 
         <div className="flex flex-wrap gap-2 mt-2">
           {props.techstack?.map((tech) => (
@@ -53,7 +53,7 @@ function ProjectSubheading(props: ProjectSubheadingProps) {
                   />
                 </div>
               </HoverCardTrigger>
-              <HoverCardContent className="w-32 bg-strong text-center">
+              <HoverCardContent className="w-32 bg-strong text-center text-super-weak">
                 <span>{tech.name}</span>
               </HoverCardContent>
             </HoverCard>

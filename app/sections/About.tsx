@@ -7,8 +7,7 @@ function About() {
     <section
       id="About"
       className="flex flex-col justify-center items-center
-      bg-[linear-gradient(21deg,transparent_0%,transparent_36%,rgba(200,200,200,0.03)_36%,rgba(180,180,180,0.04)_56%,transparent_56%,transparent_100%),linear-gradient(260deg,transparent_0%,transparent_68%,rgba(200,200,200,0.03)_68%,rgba(180,180,180,0.04)_99%,transparent_99%,transparent_100%),linear-gradient(145deg,rgb(243,244,246),rgb(249,250,251))]
-      dark:bg-[linear-gradient(21deg,transparent_0%,transparent_36%,rgba(50,50,55,0.08)_36%,rgba(60,60,65,0.1)_56%,transparent_56%,transparent_100%),linear-gradient(260deg,transparent_0%,transparent_68%,rgba(50,50,55,0.06)_68%,rgba(60,60,65,0.08)_99%,transparent_99%,transparent_100%),linear-gradient(145deg,rgb(39,39,42),rgb(24,24,27))]"
+      bg-[linear-gradient(21deg,transparent_0%,transparent_36%,rgba(50,50,55,0.08)_36%,rgba(60,60,65,0.1)_56%,transparent_56%,transparent_100%),linear-gradient(260deg,transparent_0%,transparent_68%,rgba(50,50,55,0.06)_68%,rgba(60,60,65,0.08)_99%,transparent_99%,transparent_100%),linear-gradient(145deg,rgb(39,39,42),rgb(24,24,27))]"
     >
       <h1 className="heading">About me!</h1>
       <div className="w-body">

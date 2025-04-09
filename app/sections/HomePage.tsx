@@ -4,7 +4,7 @@ import AnimatedBorderTrail from "@/components/animata/container/animated-border-
 import Image from "next/image";
 import profileImage from "@/images/profile.jpeg";
 import Link from "next/link";
-import { LOGOS } from "@/components/icons/Logos";
+import { LOGOS } from "@/components/Logos";
 import { Link2 } from "lucide-react";
 
 const contacts = [
@@ -23,7 +23,7 @@ const contacts = [
 
 function HomePage() {
   return (
-    <AnimatedBeam backgroundClassName="from-slate-500 to-indigo-600 dark:from-slate-800 dark:to-indigo-900">
+    <AnimatedBeam backgroundClassName="from-slate-800 to-indigo-900">
       <section
         id="HomePage"
         className="w-screen h-[calc(90vh-80px)] sm:h-[calc(100vh-80px)] flex flex-col justify-around md:justify-center md:gap-[10vh] items-center"

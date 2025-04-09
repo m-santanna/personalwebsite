@@ -1,12 +1,11 @@
 import ProjectSubheading from "@/components/ProjectSubheading";
-import { LOGOS } from "@/components/icons/Logos";
+import { LOGOS } from "@/components/Logos";
 
 function Projects() {
   return (
     <section
       className="w-full flex flex-col items-center justify-center
-      bg-[linear-gradient(123deg,transparent_0%,transparent_36%,rgba(17,17,57,0.02)_36%,rgba(17,17,87,0.02)_56%,transparent_56%,transparent_100%),linear-gradient(251deg,transparent_0%,transparent_68%,rgba(3,3,3,0.02)_68%,rgba(3,3,93,0.02)_99%,transparent_99%,transparent_100%),linear-gradient(135deg,rgb(200,215,255),rgb(205,215,255))] 
-      dark:bg-[linear-gradient(123deg,transparent_0%,transparent_36%,rgba(10,10,40,0.08)_36%,rgba(15,15,60,0.08)_56%,transparent_56%,transparent_100%),linear-gradient(251deg,transparent_0%,transparent_68%,rgba(5,5,20,0.06)_68%,rgba(10,10,50,0.08)_99%,transparent_99%,transparent_100%),linear-gradient(135deg,rgb(50,60,100),rgb(70,80,120))]"
+      bg-[linear-gradient(123deg,transparent_0%,transparent_36%,rgba(10,10,40,0.08)_36%,rgba(15,15,60,0.08)_56%,transparent_56%,transparent_100%),linear-gradient(251deg,transparent_0%,transparent_68%,rgba(5,5,20,0.06)_68%,rgba(10,10,50,0.08)_99%,transparent_99%,transparent_100%),linear-gradient(135deg,rgb(50,60,100),rgb(70,80,120))]"
       id="Projects"
     >
       <h1 className="heading">Projects:</h1>
