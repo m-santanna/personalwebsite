@@ -20,8 +20,6 @@ function About() {
             { icon: LOGOS.python, name: "Python" },
             { icon: LOGOS.java, name: "Java" },
             { icon: LOGOS.c, name: "C" },
-            { icon: LOGOS.postgres, name: "PostgreSQL" },
-            { icon: LOGOS.sqlite, name: "SQLite3" },
             { icon: LOGOS.lua, name: "Lua" },
           ]}
         />

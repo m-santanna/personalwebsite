@@ -11,11 +11,11 @@ export default function Nav() {
           MSS.
         </Link>
         <div className="flex items-center gap-4 text-super-weak font-extralight text-base sm:text-lg">
-          <Link href={"#About"} className="underline-animation">
-            About
-          </Link>
           <Link href={"#Projects"} className="underline-animation">
             Projects
+          </Link>
+          <Link href={"#About"} className="underline-animation">
+            About
           </Link>
         </div>
       </nav>

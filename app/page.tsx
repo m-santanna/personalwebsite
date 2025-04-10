@@ -8,8 +8,8 @@ export default function Home() {
     <main className="bg-strong">
       <Nav />
       <HomePage />
-      <About />
       <Projects />
+      <About />
     </main>
   );
 }
