@@ -1,6 +1,7 @@
 import Link from "next/link";
 import RegularTextSubheading from "@/components/RegularTextSubheading";
 import { Link2 } from "lucide-react";
+import { LOGOS } from "@/components/Logos";
 
 function About() {
   return (
@@ -13,23 +14,59 @@ function About() {
       <div className="w-body">
         <RegularTextSubheading
           title="Languages"
-          text="JavaScript, TypeScript, Java, Python, Lua, SQL, C"
+          techstack={[
+            { icon: LOGOS.typescript, name: "TypeScript" },
+            { icon: LOGOS.javascript, name: "JavaScript" },
+            { icon: LOGOS.python, name: "Python" },
+            { icon: LOGOS.java, name: "Java" },
+            { icon: LOGOS.c, name: "C" },
+            { icon: LOGOS.postgres, name: "PostgreSQL" },
+            { icon: LOGOS.sqlite, name: "SQLite3" },
+            { icon: LOGOS.lua, name: "Lua" },
+          ]}
         />
         <RegularTextSubheading
           title="Frontend"
-          text="HTML, CSS, React, Next.js, tailwindcss, shadcn, framer-motion"
+          techstack={[
+            { icon: LOGOS.html, name: "HTML" },
+            { icon: LOGOS.css, name: "CSS" },
+            { icon: LOGOS.react, name: "React" },
+            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
+            { icon: LOGOS.shadcn, name: "shadcn" },
+            { icon: LOGOS.motion, name: "framer-motion" },
+          ]}
         />
         <RegularTextSubheading
           title="Backend"
-          text="Flask, Django, Express.js, Node.js"
+          techstack={[
+            { icon: LOGOS.nextjs, name: "Next.js" },
+            { icon: LOGOS.django, name: "Django" },
+            { icon: LOGOS.flask, name: "Flask" },
+            { icon: LOGOS.nodejs, name: "Node.js" },
+            { icon: LOGOS.express, name: "Express.js" },
+          ]}
         />
         <RegularTextSubheading
           title="Databases"
-          text="PostgreSQL, SQLite3, DrizzleORM, Prisma, Supabase, NeonDB"
+          techstack={[
+            { icon: LOGOS.postgres, name: "PostgreSQL" },
+            { icon: LOGOS.sqlite, name: "SQLite3" },
+            { icon: LOGOS.drizzle, name: "DrizzleORM" },
+            { icon: LOGOS.prisma, name: "Prisma" },
+            { icon: LOGOS.supabase, name: "Supabase" },
+            { icon: LOGOS.neondb, name: "NeonDB" },
+          ]}
         />
         <RegularTextSubheading
           title="Others"
-          text="Expo/ReactNative, Electron.js, Linux/Unix, Bash, Vercel, Git, GitHub"
+          techstack={[
+            { icon: LOGOS.expo, name: "Expo" },
+            { icon: LOGOS.electron, name: "Electron.js" },
+            { icon: LOGOS.bash, name: "Bash" },
+            { icon: LOGOS.vercel, name: "Vercel" },
+            { icon: LOGOS.git, name: "Git" },
+            { icon: LOGOS.github, name: "Github" },
+          ]}
         />
         <RegularTextSubheading
           title="Education"

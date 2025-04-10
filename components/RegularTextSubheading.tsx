@@ -1,14 +1,46 @@
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
+
 interface RegulatTextSubheadingProps {
   title: string;
-  text: string;
+  text?: string;
+  techstack?: {
+    icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+    name: string;
+  }[];
 }
 
 function RegularTextSubheading(props: RegulatTextSubheadingProps) {
   return (
-    <>
-      <h3 className="subheading mb-4">{props.title}</h3>
-      <p className="text mb-8">{props.text}</p>
-    </>
+    <div className="flex flex-col mb-8 gap-4">
+      <h3 className="subheading">{props.title}</h3>
+      {props.text && <p className="text">{props.text}</p>}
+      <div className="flex flex-wrap gap-4">
+        {props.techstack &&
+          props.techstack?.map((tech) => (
+            <HoverCard
+              key={tech.name + props.title}
+              openDelay={50}
+              closeDelay={25}
+            >
+              <HoverCardTrigger>
+                <div className="flex items-center gap-2">
+                  <tech.icon
+                    key={tech.name + props.title}
+                    className="size-8 md:size-10 text-current"
+                  />
+                </div>
+              </HoverCardTrigger>
+              <HoverCardContent className="w-32 bg-strong text-center text-super-weak">
+                <span>{tech.name}</span>
+              </HoverCardContent>
+            </HoverCard>
+          ))}
+      </div>
+    </div>
   );
 }
 
