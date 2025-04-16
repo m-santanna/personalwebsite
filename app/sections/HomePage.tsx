@@ -66,6 +66,7 @@ function HomePage() {
               <Link
                 href="/resume"
                 className="flex justify-center items-center rounded-xl text-weak text-base h-full border gap-1 px-2 hover:text-amber-500 hover:border-amber-800"
+                target="_blank"
               >
                 Resume
                 <Link2 />

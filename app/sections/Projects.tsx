@@ -11,6 +11,22 @@ function Projects() {
       <h1 className="heading">Projects:</h1>
       <div className="w-body">
         <ProjectSubheading
+          title="langprac"
+          text="I've been studying Japanese for a whole year now, but recently I felt like my Katakana had dropped a lot. I wanted a very simple and fast way to practice. So I built this in just a day, but new features and ideas kept coming. Friends started using it as well. Now the app even supports russian 🤣. I needed mostly client-side features, so I decided to build a SPA, and for the state management, I learned Jotai. Super good library! Tailwind and shadcn are a must nowadays, and I used Next.js because of comfort."
+          href="https://langprac.vercel.app"
+          isGithub={false}
+          date="Apr 2025"
+          techstack={[
+            { icon: LOGOS.nextjs, name: "Next.js" },
+            { icon: LOGOS.react, name: "React" },
+            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
+            { icon: LOGOS.shadcn, name: "shadcn" },
+            { icon: LOGOS.jotai, name: "jotai" },
+            { icon: LOGOS.typescript, name: "TypeScript" },
+            { icon: LOGOS.vercel, name: "Vercel" },
+          ]}
+        />
+        <ProjectSubheading
           title="ApolloTrack"
           text="After using FitnessTrack for a while, lots of new features and improvements came to mind. ApolloTrack comes to, not only help the user track workouts, but also to track macros, diet, and even the supermarket shopping list. App currently being built with Next.js 15, and Tailwind. Using a supabase database, connected through Drizzle ORM, and BetterAuth for the authentication flow. Mobile responsive UI since day 1, and multiple UX improvements in mind."
           href="https://github.com/m-santanna/ApolloTrack"

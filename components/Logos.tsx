@@ -1,3 +1,6 @@
+import Image from "next/image";
+import jotai from "@/images/jotai.png";
+
 const Github = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 256 250"
@@ -999,6 +1002,12 @@ const Bash = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+const Jotai = (props: React.HTMLProps<HTMLDivElement>) => (
+  <div {...props}>
+    <Image src={jotai} alt="jotai" />
+  </div>
+);
+
 export const LOGOS = {
   github: Github,
   linkedIn: LinkedIn,
@@ -1034,4 +1043,5 @@ export const LOGOS = {
   nodejs: Nodejs,
   clerk: Clerk,
   bash: Bash,
+  jotai: Jotai,
 };
