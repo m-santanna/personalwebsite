@@ -5,7 +5,7 @@ import HomePage from "./sections/HomePage";
 
 export default function Home() {
   return (
-    <main className="bg-strong">
+    <main>
       <Nav />
       <HomePage />
       <Projects />

@@ -8,7 +8,9 @@ interface RegulatTextSubheadingProps {
   title: string;
   text?: string;
   techstack?: {
-    icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+    icon:
+      | React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+      | React.FunctionComponent<React.HTMLProps<HTMLDivElement>>;
     name: string;
   }[];
 }

@@ -29,6 +29,7 @@ function About() {
             { icon: LOGOS.html, name: "HTML" },
             { icon: LOGOS.css, name: "CSS" },
             { icon: LOGOS.react, name: "React" },
+            { icon: LOGOS.jotai, name: "Jotai" },
             { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
             { icon: LOGOS.shadcn, name: "shadcn" },
             { icon: LOGOS.motion, name: "framer-motion" },
