@@ -9,10 +9,7 @@ import { ArrowRight } from "lucide-react"
 
 function Projects() {
   return (
-    <section
-      className="w-full min-h-[calc(100vh-80px)] bg-strong"
-      id="Projects"
-    >
+    <section className="w-full min-h-[calc(100vh-80px)] bg-strong">
       <h1 className="heading py-16">My favorite Projects</h1>
       <div className="mx-auto max-w-xl md:max-w-5xl px-10 grid grid-cols-1 md:grid-cols-2 gap-8">
         <ProjectCard

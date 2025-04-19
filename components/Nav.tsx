@@ -14,9 +14,6 @@ export default function Nav() {
           <Link href={"/projects"} className="underline-animation">
             All Projects
           </Link>
-          <Link href={"/background"} className="underline-animation">
-            Background
-          </Link>
           <Link href={"/resume"} className="underline-animation">
             Resume
           </Link>

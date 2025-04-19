@@ -86,7 +86,7 @@ const ProjectCard = ({
       className={`group border border-gray-300 rounded-2xl p-5 flex flex-col items-center gap-4 bg-gradient-to-b from-indigo-950 to-gray-800 hover:shadow-lg transform transition-all duration-300 ease-in-out ${className}`}
     >
       <Link
-        href={visitLink ? visitLink : link}
+        href={visitLink ? visitLink : githubLink ? githubLink : link}
         target="_blank"
         className="w-full h-full"
       >

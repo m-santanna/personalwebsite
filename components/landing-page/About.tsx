@@ -5,10 +5,7 @@ import { LOGOS } from "@/components/Logos"
 
 function About() {
   return (
-    <section
-      id="About"
-      className="flex flex-col justify-center items-center bg-gradient-radial from-indigo-900 to-[rgba(21,42,59,255)]"
-    >
+    <section className="flex flex-col justify-center items-center bg-gradient-radial from-indigo-900 to-[rgba(21,42,59,255)]">
       <h1 className="heading py-16">About me</h1>
       <div className="mx-auto max-w-xl md:max-w-5xl px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         <RegularTextSubheading
@@ -19,7 +16,6 @@ function About() {
             { icon: LOGOS.python, name: "Python" },
             { icon: LOGOS.c, name: "C" },
             { icon: LOGOS.java, name: "Java" },
-            { icon: LOGOS.lua, name: "Lua" },
           ]}
         />
         <RegularTextSubheading
@@ -39,9 +35,9 @@ function About() {
           techstack={[
             { icon: LOGOS.nextjs, name: "Next.js" },
             { icon: LOGOS.django, name: "Django" },
-            { icon: LOGOS.flask, name: "Flask" },
             { icon: LOGOS.nodejs, name: "Node.js" },
             { icon: LOGOS.express, name: "Express.js" },
+            { icon: LOGOS.flask, name: "Flask" },
           ]}
         />
         <RegularTextSubheading
