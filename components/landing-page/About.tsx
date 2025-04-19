@@ -65,7 +65,7 @@ function About() {
         <div className="flex flex-col mb-8 gap-4">
           <h3 className="subheading text-center">Education</h3>
           <p className="text text-center">
-            Bachelor's degree in Computer Science at{" "}
+            Bachelor&#39;s degree in Computer Science at{" "}
             <Link
               href={"https://www.fct.unl.pt"}
               className="hover:underline"
