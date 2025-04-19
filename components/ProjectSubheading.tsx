@@ -1,30 +1,31 @@
-import { Link2 } from "lucide-react";
-import Link from "next/link";
+import { Link2 } from "lucide-react"
+import Link from "next/link"
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/components/ui/hover-card";
-import { LOGOS } from "@/components/Logos";
+} from "@/components/ui/hover-card"
+import { LOGOS } from "@/components/Logos"
 
 interface ProjectSubheadingProps {
-  title: string;
-  text: string;
-  href: string;
-  date: string;
-  isGithub: boolean;
+  id: string
+  title: string
+  text: string
+  href: string
+  date: string
+  isGithub: boolean
   techstack?: {
     icon:
       | React.FunctionComponent<React.SVGProps<SVGSVGElement>>
-      | React.FunctionComponent<React.HTMLProps<HTMLDivElement>>;
-    name: string;
-  }[];
+      | React.FunctionComponent<React.HTMLProps<HTMLDivElement>>
+    name: string
+  }[]
 }
 
 function ProjectSubheading(props: ProjectSubheadingProps) {
   return (
     <>
-      <div className="mb-2">
+      <div className="mb-2 scroll-mt-28" id={props.id}>
         <div className="flex items-center">
           <Link
             className="group flex items-center gap-2 subheading bg-gradient-to-bl from-amber-500 to-amber-800 hover:text-transparent bg-clip-text"
@@ -64,7 +65,7 @@ function ProjectSubheading(props: ProjectSubheadingProps) {
       </div>
       <p className="text text-justify mb-8">{props.text}</p>
     </>
-  );
+  )
 }
 
-export default ProjectSubheading;
+export default ProjectSubheading

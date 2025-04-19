@@ -1,7 +1,7 @@
-import Nav from "@/components/Nav";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import HomePage from "./sections/HomePage";
+import Nav from "@/components/Nav"
+import About from "../components/landing-page/About"
+import Projects from "../components/landing-page/Projects"
+import HomePage from "../components/landing-page/HomePage"
 
 export default function Home() {
   return (
@@ -11,5 +11,5 @@ export default function Home() {
       <Projects />
       <About />
     </main>
-  );
+  )
 }

@@ -1,25 +1,24 @@
-import Link from "next/link";
-import RegularTextSubheading from "@/components/RegularTextSubheading";
-import { Link2 } from "lucide-react";
-import { LOGOS } from "@/components/Logos";
+import Link from "next/link"
+import RegularTextSubheading from "@/components/RegularTextSubheading"
+import { Link2 } from "lucide-react"
+import { LOGOS } from "@/components/Logos"
 
 function About() {
   return (
     <section
       id="About"
-      className="flex flex-col justify-center items-center
-      bg-[linear-gradient(21deg,transparent_0%,transparent_36%,rgba(50,50,55,0.08)_36%,rgba(60,60,65,0.1)_56%,transparent_56%,transparent_100%),linear-gradient(260deg,transparent_0%,transparent_68%,rgba(50,50,55,0.06)_68%,rgba(60,60,65,0.08)_99%,transparent_99%,transparent_100%),linear-gradient(145deg,rgb(39,39,42),rgb(24,24,27))]"
+      className="flex flex-col justify-center items-center bg-gradient-radial from-indigo-900 to-[rgba(21,42,59,255)]"
     >
-      <h1 className="heading">About me!</h1>
-      <div className="w-body">
+      <h1 className="heading py-16">About me</h1>
+      <div className="mx-auto max-w-xl md:max-w-5xl px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         <RegularTextSubheading
           title="Languages"
           techstack={[
             { icon: LOGOS.typescript, name: "TypeScript" },
             { icon: LOGOS.javascript, name: "JavaScript" },
             { icon: LOGOS.python, name: "Python" },
-            { icon: LOGOS.java, name: "Java" },
             { icon: LOGOS.c, name: "C" },
+            { icon: LOGOS.java, name: "Java" },
             { icon: LOGOS.lua, name: "Lua" },
           ]}
         />
@@ -67,27 +66,36 @@ function About() {
             { icon: LOGOS.github, name: "Github" },
           ]}
         />
-        <RegularTextSubheading
-          title="Education"
-          text="Bachelor's degree in Computer Science at FCT-UNL due to Jul-2027"
-        />
-
-        <h3 className="subheading mb-4">CS certificates</h3>
-        <div className="flex flex-col">
-          <div className="flex">
+        <div className="flex flex-col mb-8 gap-4">
+          <h3 className="subheading text-center">Education</h3>
+          <p className="text text-center">
+            Bachelor's degree in Computer Science at{" "}
             <Link
-              href={"/cs50x"}
-              className="group flex gap-2 items-center text mb-8 bg-gradient-to-bl from-amber-500 to-amber-800 hover:text-transparent bg-clip-text"
+              href={"https://www.fct.unl.pt"}
+              className="hover:underline"
               target="_blank"
             >
-              CS50&#39;s Introduction to CS
-              <Link2 className="size-6 md:size-8 text-current group-hover:text-amber-600" />
-            </Link>
-          </div>
+              FCT-UNL
+            </Link>{" "}
+            due to Jul-2027
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col my-8">
+        <h3 className="subheading mb-4 text-center">CS certificates</h3>
+        <div className="flex justify-center">
+          <Link
+            href={"/cs50x"}
+            className="group flex gap-2 items-center text mb-8 bg-gradient-to-bl from-amber-500 to-amber-800 hover:text-transparent bg-clip-text"
+            target="_blank"
+          >
+            CS50&#39;s Introduction to CS
+            <Link2 className="size-6 md:size-8 text-current group-hover:text-amber-600" />
+          </Link>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default About;
+export default About
