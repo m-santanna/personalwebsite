@@ -14,7 +14,11 @@ export default function Nav() {
           <Link href={"/projects"} className="underline-animation">
             All Projects
           </Link>
-          <Link href={"/resume"} className="underline-animation">
+          <Link
+            href={"/resume"}
+            target="_blank"
+            className="underline-animation"
+          >
             Resume
           </Link>
         </div>

@@ -45,8 +45,8 @@ function HomePage() {
               Hello, world! 👋
             </h1>
             <p className="text-base md:text-xl text-weak text-center">
-              My name is Matheus. I am a Full-Stack Software Engineer based at
-              Lisbon, Portugal
+              My name is Matheus. I am a Full-Stack Software Engineer currently
+              at Lisbon, Portugal 🇵🇹
             </p>
             <div className="flex gap-4 items-center mt-2">
               {contacts.map((contact) => (
