@@ -1,5 +1,5 @@
-import Image from "next/image";
-import jotai from "@/images/jotai.png";
+import Image from "next/image"
+import jotai from "@/images/jotai.png"
 
 const Github = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -13,7 +13,7 @@ const Github = (props: React.SVGProps<SVGSVGElement>) => (
   >
     <path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z" />
   </svg>
-);
+)
 
 const PostgreSQL = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -84,7 +84,7 @@ const PostgreSQL = (props: React.SVGProps<SVGSVGElement>) => (
       <path d="M350.676 123.432c.863 15.994-3.445 26.888-3.988 43.914-.804 24.748 11.799 53.074-7.191 81.435" />
     </g>
   </svg>
-);
+)
 
 const BetterAuth = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -103,7 +103,7 @@ const BetterAuth = (props: React.SVGProps<SVGSVGElement>) => (
     />
     <path fill="#000" d="M252.762 204.455v92.089h-96.774v-92.089z" />
   </svg>
-);
+)
 
 const DrizzleORM = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -143,7 +143,7 @@ const DrizzleORM = (props: React.SVGProps<SVGSVGElement>) => (
       transform="matrix(.87303 .48767 -.49721 .86763 94.957 67.304)"
     />
   </svg>
-);
+)
 
 const Supabase = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -192,7 +192,7 @@ const Supabase = (props: React.SVGProps<SVGSVGElement>) => (
       </linearGradient>
     </defs>
   </svg>
-);
+)
 
 const NeonDB = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -231,7 +231,7 @@ const NeonDB = (props: React.SVGProps<SVGSVGElement>) => (
       d="M211.861 0C236.238 0 256 19.762 256 44.139v142.649c0 25.216-31.915 36.16-47.388 16.256l-48.392-62.251v75.484c0 21.939-17.784 39.723-39.722 39.723a4.409 4.409 0 0 0 4.409-4.409V115.058c0-25.223 31.914-36.167 47.395-16.256l48.391 62.243V8.825c0-4.871-3.953-8.825-8.832-8.825Z"
     />
   </svg>
-);
+)
 
 const Prisma = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -247,7 +247,7 @@ const Prisma = (props: React.SVGProps<SVGSVGElement>) => (
       d="M254.313 235.519L148 9.749A17.063 17.063 0 00133.473.037a16.87 16.87 0 00-15.533 8.052L2.633 194.848a17.465 17.465 0 00.193 18.747L59.2 300.896a18.13 18.13 0 0020.363 7.489l163.599-48.392a17.929 17.929 0 0011.26-9.722 17.542 17.542 0 00-.101-14.76l-.008.008zm-23.802 9.683l-138.823 41.05c-4.235 1.26-8.3-2.411-7.419-6.685l49.598-237.484c.927-4.443 7.063-5.147 9.003-1.035l91.814 194.973a6.63 6.63 0 01-4.18 9.18h.007z"
     />
   </svg>
-);
+)
 
 const Nextjs = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -317,7 +317,7 @@ const Nextjs = (props: React.SVGProps<SVGSVGElement>) => (
       </linearGradient>
     </defs>
   </svg>
-);
+)
 
 const HTML5 = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -338,7 +338,7 @@ const HTML5 = (props: React.SVGProps<SVGSVGElement>) => (
       d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"
     />
   </svg>
-);
+)
 
 const CSS = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -362,7 +362,7 @@ const CSS = (props: React.SVGProps<SVGSVGElement>) => (
       d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z"
     />
   </svg>
-);
+)
 
 const TailwindCSS = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -387,7 +387,7 @@ const TailwindCSS = (props: React.SVGProps<SVGSVGElement>) => (
       </clipPath>
     </defs>
   </svg>
-);
+)
 
 const Java = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -419,7 +419,7 @@ const Java = (props: React.SVGProps<SVGSVGElement>) => (
       fill="#5382A1"
     />
   </svg>
-);
+)
 
 const JavaScript = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -435,7 +435,7 @@ const JavaScript = (props: React.SVGProps<SVGSVGElement>) => (
       fill="#323330"
     />
   </svg>
-);
+)
 
 const TypeScript = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -455,7 +455,7 @@ const TypeScript = (props: React.SVGProps<SVGSVGElement>) => (
       fill="#FFF"
     />
   </svg>
-);
+)
 
 const Python = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -475,7 +475,7 @@ const Python = (props: React.SVGProps<SVGSVGElement>) => (
       d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"
     ></path>
   </svg>
-);
+)
 
 const C = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -510,7 +510,7 @@ const C = (props: React.SVGProps<SVGSVGElement>) => (
       </clipPath>
     </defs>
   </svg>
-);
+)
 
 const Lua = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -563,7 +563,7 @@ const Lua = (props: React.SVGProps<SVGSVGElement>) => (
       />
     </g>
   </svg>
-);
+)
 
 const LinkedIn = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -579,7 +579,7 @@ const LinkedIn = (props: React.SVGProps<SVGSVGElement>) => (
       fill="#0A66C2"
     />
   </svg>
-);
+)
 
 const Gmail = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -615,7 +615,7 @@ const Gmail = (props: React.SVGProps<SVGSVGElement>) => (
       />
     </g>
   </svg>
-);
+)
 
 const Vercel = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -628,7 +628,7 @@ const Vercel = (props: React.SVGProps<SVGSVGElement>) => (
   >
     <path fill="#fff" d="m128 0 128 221.705H0z" />
   </svg>
-);
+)
 
 const React = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -654,7 +654,7 @@ const React = (props: React.SVGProps<SVGSVGElement>) => (
       </g>
     </g>
   </svg>
-);
+)
 
 const Git = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -670,7 +670,7 @@ const Git = (props: React.SVGProps<SVGSVGElement>) => (
       fill="#DE4C36"
     />
   </svg>
-);
+)
 
 const Expo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -686,7 +686,7 @@ const Expo = (props: React.SVGProps<SVGSVGElement>) => (
       fill="#000020"
     />
   </svg>
-);
+)
 
 const Django = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -709,7 +709,7 @@ const Django = (props: React.SVGProps<SVGSVGElement>) => (
       }}
     />
   </svg>
-);
+)
 
 const Flask = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -725,7 +725,7 @@ const Flask = (props: React.SVGProps<SVGSVGElement>) => (
       fill="#ffffff"
     />
   </svg>
-);
+)
 
 const SQLite = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -761,7 +761,7 @@ const SQLite = (props: React.SVGProps<SVGSVGElement>) => (
       fill="#003B57"
     />
   </svg>
-);
+)
 
 const Expressjs = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -776,7 +776,7 @@ const Expressjs = (props: React.SVGProps<SVGSVGElement>) => (
       d="M32 24.795c-1.164.296-1.884.013-2.53-.957l-4.594-6.356-.664-.88-5.365 7.257c-.613.873-1.256 1.253-2.4.944l6.87-9.222-6.396-8.33c1.1-.214 1.86-.105 2.535.88l4.765 6.435 4.8-6.4c.615-.873 1.276-1.205 2.38-.883l-2.48 3.288-3.36 4.375c-.4.5-.345.842.023 1.325L32 24.795zM.008 15.427l.562-2.764C2.1 7.193 8.37 4.92 12.694 8.3c2.527 1.988 3.155 4.8 3.03 7.95H1.48c-.214 5.67 3.867 9.092 9.07 7.346 1.825-.613 2.9-2.042 3.438-3.83.273-.896.725-1.036 1.567-.78-.43 2.236-1.4 4.104-3.45 5.273-3.063 1.75-7.435 1.184-9.735-1.248C1 21.6.434 19.812.18 17.9c-.04-.316-.12-.617-.18-.92q.008-.776.008-1.552zm1.498-.38h12.872c-.084-4.1-2.637-7.012-6.126-7.037-3.83-.03-6.58 2.813-6.746 7.037z"
     />
   </svg>
-);
+)
 
 const Electron = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -824,7 +824,7 @@ const Electron = (props: React.SVGProps<SVGSVGElement>) => (
       clipRule="evenodd"
     />
   </svg>
-);
+)
 
 const Motion = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -839,7 +839,7 @@ const Motion = (props: React.SVGProps<SVGSVGElement>) => (
       d="M416.473 0 198.54 385.66H0L170.17 84.522C196.549 37.842 262.377 0 317.203 0Zm486.875 96.415c0-53.249 44.444-96.415 99.27-96.415 54.826 0 99.27 43.166 99.27 96.415 0 53.248-44.444 96.415-99.27 96.415-54.826 0-99.27-43.167-99.27-96.415ZM453.699 0h198.54L434.306 385.66h-198.54Zm234.492 0h198.542L716.56 301.138c-26.378 46.68-92.207 84.522-147.032 84.522h-99.27Z"
     />
   </svg>
-);
+)
 
 const shadcn = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -858,7 +858,7 @@ const shadcn = (props: React.SVGProps<SVGSVGElement>) => (
       d="M208 128l-80 80M192 40L40 192"
     />
   </svg>
-);
+)
 
 const TensorFlow = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -885,7 +885,7 @@ const TensorFlow = (props: React.SVGProps<SVGSVGElement>) => (
       />
     </g>
   </svg>
-);
+)
 
 const Nodejs = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -964,7 +964,7 @@ const Nodejs = (props: React.SVGProps<SVGSVGElement>) => (
       mask="url(#g)"
     />
   </svg>
-);
+)
 
 const Clerk = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -984,7 +984,7 @@ const Clerk = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="1"
     ></path>
   </svg>
-);
+)
 
 const Bash = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -1000,13 +1000,362 @@ const Bash = (props: React.SVGProps<SVGSVGElement>) => (
       d="M28.057 6.53 17.952.532a3.8 3.8 0 0 0-3.88 0L3.965 6.53A4.03 4.03 0 0 0 2 10.002v11.996a4.03 4.03 0 0 0 1.948 3.472l10.105 5.998a3.8 3.8 0 0 0 3.88 0L28.04 25.47a4.03 4.03 0 0 0 1.948-3.472V10.002a4.03 4.03 0 0 0-1.93-3.472zM20.23 25.262v.86a.318.318 0 0 1-.148.265l-.512.293c-.08.042-.148 0-.148-.113v-.847a1.66 1.66 0 0 1-1.164.113c-.062-.042-.086-.122-.056-.2l.183-.78a.322.322 0 0 1 .102-.17.18.18 0 0 1 .05-.035.11.11 0 0 1 .08 0 1.41 1.41 0 0 0 1.059-.134 1.41 1.41 0 0 0 .79-1.21c0-.438-.24-.62-.82-.625-.734 0-1.4-.14-1.43-1.224a3.137 3.137 0 0 1 1.186-2.4v-.872a.34.34 0 0 1 .148-.268l.494-.314c.08-.042.148 0 .148.116v.872a1.61 1.61 0 0 1 .967-.116c.07.04.098.128.064.2l-.173.773a.325.325 0 0 1-.138.195c-.02.012-.05.008-.074 0a1.28 1.28 0 0 0-.931.152 1.17 1.17 0 0 0-.706 1.037c0 .395.208.515.907.53.935 0 1.337.423 1.348 1.362a3.346 3.346 0 0 1-1.228 2.53zm5.293-1.45a.201.201 0 0 1-.078.194L22.9 25.558c-.024.02-.06.023-.087.007s-.04-.05-.033-.08v-.66a.184.184 0 0 1 .116-.162l2.516-1.507c.024-.02.06-.023.087-.007s.04.05.033.08v.582zM27.288 9.06l-9.562 5.906c-1.193.706-2.07 1.478-2.07 2.914v11.778c0 .86.353 1.4.882 1.58a3.14 3.14 0 0 1-.53.053 3.13 3.13 0 0 1-1.595-.441L4.308 24.853A3.3 3.3 0 0 1 2.706 22V10.002a3.304 3.304 0 0 1 1.602-2.858l10.105-5.998c.98-.58 2.196-.58 3.176 0l10.105 5.998c.833.504 1.4 1.35 1.552 2.3-.328-.713-1.083-.9-1.962-.395h.003z"
     />
   </svg>
-);
+)
 
 const Jotai = (props: React.HTMLProps<HTMLDivElement>) => (
   <div {...props}>
     <Image src={jotai} alt="jotai" />
   </div>
-);
+)
+
+const TanStack = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 633 633"
+    width="1em"
+    height="1em"
+    {...props}
+  >
+    <defs>
+      <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="71.65%">
+        <stop offset="0%" stopColor="#6BDAFF" />
+        <stop offset="31.922%" stopColor="#F9FFB5" />
+        <stop offset="70.627%" stopColor="#FFA770" />
+        <stop offset="100%" stopColor="#FF7373" />
+      </linearGradient>
+      <linearGradient id="d" x1="43.996%" x2="53.441%" y1="8.54%" y2="93.872%">
+        <stop offset="0%" stopColor="#673800" />
+        <stop offset="100%" stopColor="#B65E00" />
+      </linearGradient>
+      <linearGradient id="e" x1="50%" x2="50%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#2F8A00" />
+        <stop offset="100%" stopColor="#90FF57" />
+      </linearGradient>
+      <linearGradient id="f" x1="50%" x2="50%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#2F8A00" />
+        <stop offset="100%" stopColor="#90FF57" />
+      </linearGradient>
+      <linearGradient id="g" x1="50%" x2="50%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#2F8A00" />
+        <stop offset="100%" stopColor="#90FF57" />
+      </linearGradient>
+      <linearGradient id="h" x1="50%" x2="50%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#2F8A00" />
+        <stop offset="100%" stopColor="#90FF57" />
+      </linearGradient>
+      <linearGradient id="i" x1="50%" x2="50%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#2F8A00" />
+        <stop offset="100%" stopColor="#90FF57" />
+      </linearGradient>
+      <linearGradient id="j" x1="50%" x2="50%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#2F8A00" />
+        <stop offset="100%" stopColor="#90FF57" />
+      </linearGradient>
+      <linearGradient id="k" x1="92.9%" x2="8.641%" y1="45.768%" y2="54.892%">
+        <stop offset="0%" stopColor="#EE2700" />
+        <stop offset="100%" stopColor="#FF008E" />
+      </linearGradient>
+      <linearGradient id="l" x1="61.109%" x2="43.717%" y1="3.633%" y2="43.072%">
+        <stop offset="0%" stopColor="#FFF400" />
+        <stop offset="100%" stopColor="#3C8700" />
+      </linearGradient>
+      <linearGradient id="m" x1="50%" x2="50%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#FFDF00" />
+        <stop offset="100%" stopColor="#FF9D00" />
+      </linearGradient>
+      <linearGradient id="n" x1="127.279%" x2="0%" y1="49.778%" y2="50.222%">
+        <stop offset="0%" stopColor="#FFA400" />
+        <stop offset="100%" stopColor="#FF5E00" />
+      </linearGradient>
+      <linearGradient id="o" x1="127.279%" x2="0%" y1="47.531%" y2="52.469%">
+        <stop offset="0%" stopColor="#FFA400" />
+        <stop offset="100%" stopColor="#FF5E00" />
+      </linearGradient>
+      <linearGradient id="p" x1="127.279%" x2="0%" y1="46.195%" y2="53.805%">
+        <stop offset="0%" stopColor="#FFA400" />
+        <stop offset="100%" stopColor="#FF5E00" />
+      </linearGradient>
+      <linearGradient id="q" x1="127.279%" x2="0%" y1="35.33%" y2="64.67%">
+        <stop offset="0%" stopColor="#FFA400" />
+        <stop offset="100%" stopColor="#FF5E00" />
+      </linearGradient>
+      <linearGradient id="r" x1="127.279%" x2="0%" y1="4.875%" y2="95.125%">
+        <stop offset="0%" stopColor="#FFA400" />
+        <stop offset="100%" stopColor="#FF5E00" />
+      </linearGradient>
+      <linearGradient id="s" x1="78.334%" x2="31.668%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#FFA400" />
+        <stop offset="100%" stopColor="#FF5E00" />
+      </linearGradient>
+      <linearGradient id="t" x1="57.913%" x2="44.88%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#FFA400" />
+        <stop offset="100%" stopColor="#FF5E00" />
+      </linearGradient>
+      <linearGradient id="u" x1="50.495%" x2="49.68%" y1="0%" y2="100%">
+        <stop offset="0%" stopColor="#FFA400" />
+        <stop offset="100%" stopColor="#FF5E00" />
+      </linearGradient>
+      <circle id="a" cx={308.5} cy={308.5} r={308.5} />
+      <circle id="v" cx={307.5} cy={308.5} r={316.5} />
+    </defs>
+    <g fill="none" fillRule="evenodd" transform="translate(9 8)">
+      <mask id="c" fill="#fff">
+        <use xlinkHref="#a" />
+      </mask>
+      <use xlinkHref="#a" fill="url(#b)" />
+      <ellipse
+        cx={81.5}
+        cy={602.5}
+        fill="#015064"
+        stroke="#00CFE2"
+        strokeWidth={25}
+        mask="url(#c)"
+        rx={214.5}
+        ry={185.968}
+      />
+      <ellipse
+        cx={535.5}
+        cy={602.5}
+        fill="#015064"
+        stroke="#00CFE2"
+        strokeWidth={25}
+        mask="url(#c)"
+        rx={214.5}
+        ry={185.968}
+      />
+      <ellipse
+        cx={81.5}
+        cy={640.5}
+        fill="#015064"
+        stroke="#00A8B8"
+        strokeWidth={25}
+        mask="url(#c)"
+        rx={214.5}
+        ry={185.968}
+      />
+      <ellipse
+        cx={535.5}
+        cy={640.5}
+        fill="#015064"
+        stroke="#00A8B8"
+        strokeWidth={25}
+        mask="url(#c)"
+        rx={214.5}
+        ry={185.968}
+      />
+      <ellipse
+        cx={81.5}
+        cy={676.5}
+        fill="#015064"
+        stroke="#007782"
+        strokeWidth={25}
+        mask="url(#c)"
+        rx={214.5}
+        ry={185.968}
+      />
+      <ellipse
+        cx={535.5}
+        cy={676.5}
+        fill="#015064"
+        stroke="#007782"
+        strokeWidth={25}
+        mask="url(#c)"
+        rx={214.5}
+        ry={185.968}
+      />
+      <g mask="url(#c)">
+        <path
+          fill="url(#d)"
+          stroke="#6E3A00"
+          strokeWidth={6.088}
+          d="M98.318 88.007c7.691 37.104 16.643 72.442 26.856 106.013 10.212 33.571 25.57 68.934 46.07 106.088l-51.903 11.67c-10.057-60.01-17.232-99.172-21.525-117.487-4.293-18.315-10.989-51.434-20.089-99.357l20.591-6.927"
+          transform="scale(-1 1) rotate(25 -300.37 -553.013)"
+        />
+        <g stroke="#2F8A00">
+          <path
+            fill="url(#e)"
+            strokeWidth={9.343}
+            d="M108.544 66.538s-13.54-21.305-37.417-27.785c-15.917-4.321-33.933.31-54.048 13.892C33.464 65.975 47.24 73.52 58.405 75.28c16.749 2.64 50.14-8.74 50.14-8.74Z"
+            transform="rotate(1 -6061.691 5926.397)"
+          />
+          <path
+            fill="url(#f)"
+            strokeWidth={9.343}
+            d="M108.544 67.138s-47.187-5.997-81.077 19.936C4.873 104.362-3.782 137.794 1.502 187.369c28.42-29.22 48.758-50.836 61.016-64.846 18.387-21.016 46.026-55.385 46.026-55.385Z"
+            transform="rotate(1 -6061.691 5926.397)"
+          />
+          <path
+            fill="url(#g)"
+            strokeWidth={9.343}
+            d="M108.544 66.538c-1.96-21.705 3.98-38.018 17.82-48.94C140.203 6.674 154.85.808 170.303 0c-4.865 21.527-12.373 36.314-22.524 44.361-10.151 8.048-23.23 15.44-39.236 22.177Z"
+            transform="rotate(1 -6061.691 5926.397)"
+          />
+          <path
+            fill="url(#h)"
+            strokeWidth={9.343}
+            d="M108.544 67.138c29.838-31.486 61.061-42.776 93.669-33.869C234.82 42.176 253.749 60.785 259 89.096c-34.898-3.657-59.974-6.343-75.228-8.058-15.254-1.716-40.33-6.349-75.228-13.9Z"
+            transform="rotate(1 -6061.691 5926.397)"
+          />
+          <path
+            fill="url(#i)"
+            strokeWidth={9.343}
+            d="M108.544 67.138c34.868-9.381 64.503-3.658 88.905 17.17 24.402 20.829 39.656 46.686 45.762 77.571-39.626-7.574-68.4-20.115-86.322-37.624a395.051 395.051 0 0 1-48.345-57.117Z"
+            transform="rotate(1 -6061.691 5926.397)"
+          />
+          <path
+            fill="url(#j)"
+            strokeWidth={9.343}
+            d="M108.544 67.138C76.206 82.6 57.608 105.366 52.75 135.436c-4.858 30.07-.292 62.89 13.698 98.462 24.873-41.418 38.905-71.368 42.096-89.849 3.191-18.48 3.191-44.118 0-76.91Z"
+            transform="rotate(1 -6061.691 5926.397)"
+          />
+          <path
+            strokeLinecap="round"
+            strokeWidth={5.91}
+            d="M211.284 173.477c-13.851 21.992-23.291 42.022-28.32 60.093-5.03 18.071-8.175 33.143-9.436 45.216"
+          />
+          <path
+            strokeLinecap="round"
+            strokeWidth={5.91}
+            d="M209.814 176.884c-23.982 2.565-42.792 10.469-56.428 23.714-13.639 13.245-23.483 26.136-29.536 38.674M219.045 167.299c29.028-7.723 50.972-10.173 65.831-7.352 14.859 2.822 26.807 7.659 35.842 14.51M211.31 172.618c20.29 9.106 38.353 19.052 54.186 29.837 15.833 10.786 27.714 20.99 35.643 30.617"
+          />
+        </g>
+        <path
+          stroke="#830305"
+          strokeLinecap="round"
+          strokeLinejoin="bevel"
+          strokeWidth={6.937}
+          d="m409.379 398.157-23.176 18.556M328.04 375.516l-22.313 28.398M312.904 353.698l53.18 59.816"
+        />
+        <path
+          fill="url(#k)"
+          d="M67.585 27.463H5.68C1.893 28.148 0 30.38 0 34.16c0 3.78 1.893 6.211 5.68 7.293h67.17l41.751-30.356c2.488-2.646 2.794-5.315.92-8.006s-4.6-3.626-8.177-2.803l-39.76 27.174Z"
+          transform="scale(-1 1) rotate(-9 2092.128 2856.854)"
+        />
+        <path
+          fill="#D8D8D8"
+          stroke="#FFF"
+          strokeLinecap="round"
+          strokeLinejoin="bevel"
+          strokeWidth={4.414}
+          d="m402.861 391.51.471-4.088M382.21 388.752l.472-4.087M361.546 385.404l.485-3.845M337.59 371.883l2.56-2.498M324.276 359.567l2.56-2.497"
+        />
+      </g>
+      <ellipse
+        cx={308.5}
+        cy={720.5}
+        fill="url(#l)"
+        mask="url(#c)"
+        rx={266}
+        ry={316.5}
+      />
+      <ellipse
+        cx={308.5}
+        cy={720.5}
+        stroke="#6DA300"
+        strokeOpacity={0.502}
+        strokeWidth={26}
+        mask="url(#c)"
+        rx={253}
+        ry={303.5}
+      />
+      <g mask="url(#c)">
+        <g transform="translate(389 -32)">
+          <circle cx={168.5} cy={113.5} r={113.5} fill="url(#m)" />
+          <circle
+            cx={168.5}
+            cy={113.5}
+            r={106}
+            stroke="#FFC900"
+            strokeOpacity={0.529}
+            strokeWidth={15}
+          />
+          <path
+            stroke="url(#n)"
+            strokeLinecap="round"
+            strokeLinejoin="bevel"
+            strokeWidth={12}
+            d="M30 113H0"
+          />
+          <path
+            stroke="url(#o)"
+            strokeLinecap="round"
+            strokeLinejoin="bevel"
+            strokeWidth={12}
+            d="M33.5 79.5 7 74"
+          />
+          <path
+            stroke="url(#p)"
+            strokeLinecap="round"
+            strokeLinejoin="bevel"
+            strokeWidth={12}
+            d="m34 146-29 8"
+          />
+          <path
+            stroke="url(#q)"
+            strokeLinecap="round"
+            strokeLinejoin="bevel"
+            strokeWidth={12}
+            d="m45 177-24 13"
+          />
+          <path
+            stroke="url(#r)"
+            strokeLinecap="round"
+            strokeLinejoin="bevel"
+            strokeWidth={12}
+            d="m67 204-20 19"
+          />
+          <path
+            stroke="url(#s)"
+            strokeLinecap="round"
+            strokeLinejoin="bevel"
+            strokeWidth={12}
+            d="m94.373 227-13.834 22.847"
+          />
+          <path
+            stroke="url(#t)"
+            strokeLinecap="round"
+            strokeLinejoin="bevel"
+            strokeWidth={12}
+            d="M127.5 243.5 120 268"
+          />
+          <path
+            stroke="url(#u)"
+            strokeLinecap="round"
+            strokeLinejoin="bevel"
+            strokeWidth={12}
+            d="m167.5 252.5.5 24.5"
+          />
+        </g>
+      </g>
+      <circle cx={307.5} cy={308.5} r={304} stroke="#000" strokeWidth={25} />
+    </g>
+  </svg>
+)
+
+const Netlify = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="0 0 256 226"
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    preserveAspectRatio="xMidYMid"
+    {...props}
+  >
+    <path
+      fill="#05BDBA"
+      d="M69.181 188.087h-2.417l-12.065-12.065v-2.417l18.444-18.444h12.778l1.704 1.704v12.778zM54.699 51.628v-2.417l12.065-12.065h2.417L87.625 55.59v12.778l-1.704 1.704H73.143z"
+    />
+    <path
+      fill="#014847"
+      d="M160.906 149.198h-17.552l-1.466-1.466v-41.089c0-7.31-2.873-12.976-11.689-13.174-4.537-.119-9.727 0-15.274.218l-.833.852v53.173l-1.466 1.466H95.074l-1.466-1.466v-70.19l1.466-1.467h39.503c15.354 0 27.795 12.441 27.795 27.795v43.882l-1.466 1.466Z"
+    />
+    <path
+      fill="#05BDBA"
+      d="M71.677 122.889H1.466L0 121.423V103.83l1.466-1.466h70.211l1.466 1.466v17.593zM254.534 122.889h-70.211l-1.466-1.466V103.83l1.466-1.466h70.211L256 103.83v17.593zM117.876 54.124V1.466L119.342 0h17.593l1.466 1.466v52.658l-1.466 1.466h-17.593zM117.876 223.787v-52.658l1.466-1.466h17.593l1.466 1.466v52.658l-1.466 1.465h-17.593z"
+    />
+  </svg>
+)
 
 export const LOGOS = {
   github: Github,
@@ -1044,4 +1393,6 @@ export const LOGOS = {
   clerk: Clerk,
   bash: Bash,
   jotai: Jotai,
-};
+  tanstack: TanStack,
+  netlify: Netlify,
+}

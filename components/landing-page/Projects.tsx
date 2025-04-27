@@ -1,5 +1,6 @@
 import { LOGOS } from "@/components/Logos"
 import ProjectCard from "../ProjectCard"
+import tidytabsimg from "@/images/tidytabs.png"
 import langpracimg from "@/images/langprac.png"
 import folkyourselfimg from "@/images/folkyourself.png"
 import apollotrackimg from "@/images/apollotrack.png"
@@ -12,6 +13,24 @@ function Projects() {
     <section className="w-full min-h-[calc(100vh-80px)] bg-strong">
       <h1 className="heading py-16">My favorite Projects</h1>
       <div className="mx-auto max-w-xl md:max-w-5xl px-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ProjectCard
+          title="TidyTabs"
+          image={tidytabsimg}
+          description="The easy way to deal with Safari's bookmarks."
+          link={"/projects#tidytabs"}
+          visitLink="https://tidytabs.netlify.app"
+          githubLink="https://github.com/m-santanna/tidytabs"
+          className="hover:to-sky-950"
+          techstack={[
+            { icon: LOGOS.tanstack, name: "TanStack" },
+            { icon: LOGOS.react, name: "React" },
+            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
+            { icon: LOGOS.shadcn, name: "shadcn" },
+            { icon: LOGOS.jotai, name: "jotai" },
+            { icon: LOGOS.typescript, name: "TypeScript" },
+            { icon: LOGOS.netlify, name: "Netlify" },
+          ]}
+        />
         <ProjectCard
           title="langprac"
           image={langpracimg}
@@ -64,26 +83,6 @@ function Projects() {
             { icon: LOGOS.typescript, name: "TypeScript" },
             { icon: LOGOS.motion, name: "framer-motion" },
             { icon: LOGOS.shadcn, name: "shadcn" },
-            { icon: LOGOS.vercel, name: "Vercel" },
-          ]}
-        />
-        <ProjectCard
-          title="FitnessTrack"
-          image={fitnesstrackimg}
-          description="Web App built to help users track their workouts."
-          link={"/projects#fitnesstrack"}
-          visitLink="https://fitnesstrack.vercel.app"
-          githubLink="https://github.com/m-santanna/fitnesstrack"
-          className="hover:to-green-950"
-          techstack={[
-            { icon: LOGOS.nextjs, name: "Next.js" },
-            { icon: LOGOS.react, name: "React" },
-            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
-            { icon: LOGOS.typescript, name: "TypeScript" },
-            { icon: LOGOS.postgres, name: "PostgreSQL" },
-            { icon: LOGOS.clerk, name: "Clerk" },
-            { icon: LOGOS.neondb, name: "NeonDB" },
-            { icon: LOGOS.prisma, name: "Prisma" },
             { icon: LOGOS.vercel, name: "Vercel" },
           ]}
         />

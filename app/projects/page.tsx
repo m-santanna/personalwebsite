@@ -11,6 +11,23 @@ const Page = () => {
         <h1 className="heading py-16">All Projects</h1>
         <div className="max-w-xl md:max-w-5xl mx-auto px-10 gap-8">
           <ProjectSubheading
+            id="tidytabs"
+            title="TidyTabs"
+            text="I've been studying Japanese for a whole year now, but recently I felt like my Katakana skills degraded. I wanted a very simple and fast way to practice. So I built this in just a day, but new features and ideas kept coming. Friends started using it as well. Now the app even supports russian 🤣. I needed mostly client-side features, so I decided to build a SPA, and for the state management, I learned Jotai. Super good library! Tailwind and shadcn are a must nowadays, and I used Next.js for the very few server code."
+            href="https://tidytabs.netlify.app"
+            isGithub={false}
+            date="Apr 2025"
+            techstack={[
+              { icon: LOGOS.tanstack, name: "TanStack" },
+              { icon: LOGOS.react, name: "React" },
+              { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
+              { icon: LOGOS.shadcn, name: "shadcn" },
+              { icon: LOGOS.jotai, name: "jotai" },
+              { icon: LOGOS.typescript, name: "TypeScript" },
+              { icon: LOGOS.netlify, name: "Netlify" },
+            ]}
+          />
+          <ProjectSubheading
             id="langprac"
             title="langprac"
             text="I've been studying Japanese for a whole year now, but recently I felt like my Katakana skills degraded. I wanted a very simple and fast way to practice. So I built this in just a day, but new features and ideas kept coming. Friends started using it as well. Now the app even supports russian 🤣. I needed mostly client-side features, so I decided to build a SPA, and for the state management, I learned Jotai. Super good library! Tailwind and shadcn are a must nowadays, and I used Next.js for the very few server code."
