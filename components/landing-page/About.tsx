@@ -14,7 +14,6 @@ function About() {
             { icon: LOGOS.typescript, name: "TypeScript" },
             { icon: LOGOS.javascript, name: "JavaScript" },
             { icon: LOGOS.python, name: "Python" },
-            { icon: LOGOS.c, name: "C" },
             { icon: LOGOS.java, name: "Java" },
           ]}
         />
