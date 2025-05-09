@@ -13,7 +13,7 @@ const Page = () => {
           <ProjectSubheading
             id="tidytabs"
             title="TidyTabs"
-            text="I've been studying Japanese for a whole year now, but recently I felt like my Katakana skills degraded. I wanted a very simple and fast way to practice. So I built this in just a day, but new features and ideas kept coming. Friends started using it as well. Now the app even supports russian 🤣. I needed mostly client-side features, so I decided to build a SPA, and for the state management, I learned Jotai. Super good library! Tailwind and shadcn are a must nowadays, and I used Next.js for the very few server code."
+            text="I personally don't think the safari bookmarks are great. I wanted to have more control of them. Also wanted to get in touch with new technologies. Being a 1 stack Larry didn't sound good, so I wanted to get my hands on a new React framework. That's when I found out about TanStack Start. Altough the application didn't need SSR, nor RSC, I still opted into TanStack Start to learn its features. Also got into Netlify to deploy the application."
             href="https://tidytabs.netlify.app"
             isGithub={false}
             date="Apr 2025"
