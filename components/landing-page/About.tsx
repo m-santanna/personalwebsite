@@ -5,7 +5,7 @@ import { LOGOS } from "@/components/Logos"
 
 function About() {
   return (
-    <section className="flex flex-col justify-center items-center bg-gradient-radial from-indigo-900 to-[rgba(21,42,59,255)]">
+    <section className="flex flex-col justify-center items-center">
       <h1 className="heading py-16">About me</h1>
       <div className="mx-auto max-w-xl md:max-w-5xl px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         <RegularTextSubheading
