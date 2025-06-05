@@ -11,6 +11,23 @@ const Page = () => {
         <h1 className="heading py-16">All Projects</h1>
         <div className="max-w-xl md:max-w-5xl mx-auto px-10 gap-8">
           <ProjectSubheading
+            id="apollotrack"
+            title="ApolloTrack"
+            text="This one was fun and annoying to build (at the same time!). Recently, I have been trying harder at the gym. Following the trending fitness waves like everyone else, I realized that it isn't just about training hard. We clearly also need to eat well. I realized I needed to keep track of my calories, and there are a ton of options out there! The main problem is that none of them are actually free. I talked with a few friends and they all said the same thing: 'No way I am paying for that! I can just use an excel spreadsheet!!!'. Nobody likes excel. Let's be real. And here we are! I built this to help me and my friends track our calories. The fun part about building this, is that it doesn't have a database. Then you may ask: 'What do you mean there is no database?!', and I will just say: 'LOCALSTORAGE IS FIRE!!!!'. Yes. I know localStorage isn't ideal for storing sensitive data, it is vulnerable to Cross-Site Scripting, and all of that. But realistically speaking, it is just the stuff you eat and your macros that are being stored. Plus, by doing it this way, users do NOT need to login. They just use the website, and the information is stored in their own browser. We don't store any of that information. In my opinion, that is a win! The general problem of not using a database, and stricly using localStorage is that you lose some of  the stuff you took for granted, like SQL and ORMs. So you have to build your own data structures (which is kinda cool), but that takes some time. I used Jotai to access the LocalStorage atoms, and I personally really like the library. Also, to build this project I had to learn a very good chunk of stuff about form and tables. This was veeery cool, because I managed to learn more things about the TanStack universe. TanStack Form and TanStack Table are pretty awesome solutions to these problems, and shadcn did a very good job with his Table Component. In terms of framework, I used TanStack Start again, for the sake of practicing. The UI has a mobile first approach, since I planned on using the app mostly on my phone. I think it looks clean :)"
+            href="https://apollotrack.vercel.app"
+            date="May 2025"
+            isGithub={false}
+            techstack={[
+              { icon: LOGOS.tanstack, name: "TanStack" },
+              { icon: LOGOS.react, name: "React" },
+              { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
+              { icon: LOGOS.jotai, name: "Jotai" },
+              { icon: LOGOS.typescript, name: "TypeScript" },
+              { icon: LOGOS.shadcn, name: "shadcn" },
+              { icon: LOGOS.vercel, name: "Vercel" },
+            ]}
+          />
+          <ProjectSubheading
             id="tidytabs"
             title="TidyTabs"
             text="I personally don't think the safari bookmarks are great. I wanted to have more control of them. Also wanted to get in touch with new technologies. Being a 1 stack Larry didn't sound good, so I wanted to get my hands on a new React framework. That's when I found out about TanStack Start. Altough the application didn't need SSR, nor RSC, I still opted into TanStack Start to learn its features. Also got into Netlify to deploy the application."
@@ -41,26 +58,6 @@ const Page = () => {
               { icon: LOGOS.shadcn, name: "shadcn" },
               { icon: LOGOS.jotai, name: "jotai" },
               { icon: LOGOS.typescript, name: "TypeScript" },
-              { icon: LOGOS.vercel, name: "Vercel" },
-            ]}
-          />
-          <ProjectSubheading
-            id="apollotrack"
-            title="ApolloTrack"
-            text="After using FitnessTrack for a while, lots of new features and improvements came to mind. ApolloTrack comes to, not only help the user track workouts, but also to track macros, diet, and even the supermarket shopping list. App currently being built with Next.js 15, and Tailwind. Using a supabase database, connected through Drizzle ORM, and BetterAuth for the authentication flow. Mobile responsive UI since day 1, and multiple UX improvements in mind."
-            href="https://github.com/m-santanna/ApolloTrack"
-            date="Mar 2025"
-            isGithub={true}
-            techstack={[
-              { icon: LOGOS.nextjs, name: "Next.js" },
-              { icon: LOGOS.react, name: "React" },
-              { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
-              { icon: LOGOS.typescript, name: "TypeScript" },
-              { icon: LOGOS.supabase, name: "Supabase" },
-              { icon: LOGOS.drizzle, name: "Drizzle ORM" },
-              { icon: LOGOS.betterauth, name: "BetterAuth" },
-              { icon: LOGOS.motion, name: "framer-motion" },
-              { icon: LOGOS.shadcn, name: "shadcn" },
               { icon: LOGOS.vercel, name: "Vercel" },
             ]}
           />

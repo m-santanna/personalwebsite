@@ -4,7 +4,7 @@ import tidytabsimg from "@/images/tidytabs.png"
 import langpracimg from "@/images/langprac.png"
 import folkyourselfimg from "@/images/folkyourself.png"
 import apollotrackimg from "@/images/apollotrack.png"
-import fitnesstrackimg from "@/images/fitnesstrack.png"
+
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
@@ -13,6 +13,24 @@ function Projects() {
     <section className="w-full min-h-[calc(100vh-80px)] bg-strong">
       <h1 className="heading py-16">My favorite Projects</h1>
       <div className="mx-auto max-w-xl md:max-w-5xl px-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ProjectCard
+          title="ApolloTrack"
+          image={apollotrackimg}
+          description="Tracking calories like an olympian god was never that easy."
+          link={"/projects#apollotrack"}
+          visitLink="https://apollotrack.vercel.app"
+          githubLink="https://github.com/m-santanna/apollotrack"
+          className="hover:to-lime-950"
+          techstack={[
+            { icon: LOGOS.tanstack, name: "TanStack" },
+            { icon: LOGOS.react, name: "React" },
+            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
+            { icon: LOGOS.jotai, name: "Jotai" },
+            { icon: LOGOS.typescript, name: "TypeScript" },
+            { icon: LOGOS.shadcn, name: "shadcn" },
+            { icon: LOGOS.vercel, name: "Vercel" },
+          ]}
+        />
         <ProjectCard
           title="TidyTabs"
           image={tidytabsimg}
@@ -46,26 +64,6 @@ function Projects() {
             { icon: LOGOS.shadcn, name: "shadcn" },
             { icon: LOGOS.jotai, name: "jotai" },
             { icon: LOGOS.typescript, name: "TypeScript" },
-            { icon: LOGOS.vercel, name: "Vercel" },
-          ]}
-        />
-        <ProjectCard
-          title="ApolloTrack"
-          image={apollotrackimg}
-          description="App to track calories, workouts and even supermarket lists."
-          link={"/projects#apollotrack"}
-          githubLink="https://github.com/m-santanna/apollotrack"
-          className="hover:to-lime-950"
-          techstack={[
-            { icon: LOGOS.nextjs, name: "Next.js" },
-            { icon: LOGOS.react, name: "React" },
-            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
-            { icon: LOGOS.typescript, name: "TypeScript" },
-            { icon: LOGOS.supabase, name: "Supabase" },
-            { icon: LOGOS.drizzle, name: "Drizzle ORM" },
-            { icon: LOGOS.betterauth, name: "BetterAuth" },
-            { icon: LOGOS.motion, name: "framer-motion" },
-            { icon: LOGOS.shadcn, name: "shadcn" },
             { icon: LOGOS.vercel, name: "Vercel" },
           ]}
         />

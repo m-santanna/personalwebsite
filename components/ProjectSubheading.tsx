@@ -61,7 +61,7 @@ function ProjectSubheading(props: ProjectSubheadingProps) {
           </HoverCard>
         ))}
       </div>
-      <p className="text text-justify mb-8">{props.text}</p>
+      <p className="text text-justify mt-2 mb-8">{props.text}</p>
     </div>
   )
 }
