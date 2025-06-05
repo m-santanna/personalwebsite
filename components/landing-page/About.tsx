@@ -15,6 +15,8 @@ function About() {
             { icon: LOGOS.javascript, name: "JavaScript" },
             { icon: LOGOS.python, name: "Python" },
             { icon: LOGOS.java, name: "Java" },
+            { icon: LOGOS.c, name: "C" },
+            { icon: LOGOS.lua, name: "Lua" },
           ]}
         />
         <RegularTextSubheading
@@ -33,6 +35,7 @@ function About() {
           title="Backend"
           techstack={[
             { icon: LOGOS.nextjs, name: "Next.js" },
+            { icon: LOGOS.tanstack, name: "TanStack Start" },
             { icon: LOGOS.django, name: "Django" },
             { icon: LOGOS.nodejs, name: "Node.js" },
             { icon: LOGOS.express, name: "Express.js" },
@@ -57,6 +60,7 @@ function About() {
             { icon: LOGOS.electron, name: "Electron.js" },
             { icon: LOGOS.bash, name: "Bash" },
             { icon: LOGOS.vercel, name: "Vercel" },
+            { icon: LOGOS.netlify, name: "Netlify" },
             { icon: LOGOS.git, name: "Git" },
             { icon: LOGOS.github, name: "Github" },
           ]}
