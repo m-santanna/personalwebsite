@@ -1,6 +1,6 @@
 import { LOGOS } from "@/components/Logos"
 import ProjectCard from "../ProjectCard"
-import tidytabsimg from "@/images/tidytabs.png"
+import rafaelwittimg from "@/images/rafaelwitt.png"
 import langpracimg from "@/images/langprac.png"
 import folkyourselfimg from "@/images/folkyourself.png"
 import apollotrackimg from "@/images/apollotrack.png"
@@ -13,6 +13,23 @@ function Projects() {
     <section className="w-full min-h-[calc(100vh-80px)] bg-strong">
       <h1 className="heading py-16">My favorite Projects</h1>
       <div className="mx-auto max-w-xl md:max-w-5xl px-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ProjectCard
+          title="Rafael Witt"
+          image={rafaelwittimg}
+          description="His official website, where his shows and concerts can be found."
+          link={"/projects#rafaelwitt"}
+          visitLink="https://rafaelwitt.com"
+          className="hover:to-sky-950"
+          techstack={[
+            { icon: LOGOS.nextjs, name: "Next.js" },
+            { icon: LOGOS.react, name: "React" },
+            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
+            { icon: LOGOS.shadcn, name: "shadcn" },
+            { icon: LOGOS.jotai, name: "jotai" },
+            { icon: LOGOS.typescript, name: "TypeScript" },
+            { icon: LOGOS.vercel, name: "Vercel" },
+          ]}
+        />
         <ProjectCard
           title="ApolloTrack"
           image={apollotrackimg}
@@ -29,24 +46,6 @@ function Projects() {
             { icon: LOGOS.typescript, name: "TypeScript" },
             { icon: LOGOS.shadcn, name: "shadcn" },
             { icon: LOGOS.vercel, name: "Vercel" },
-          ]}
-        />
-        <ProjectCard
-          title="TidyTabs"
-          image={tidytabsimg}
-          description="The easy way to deal with Safari's bookmarks."
-          link={"/projects#tidytabs"}
-          visitLink="https://tidytabs.netlify.app"
-          githubLink="https://github.com/m-santanna/tidytabs"
-          className="hover:to-sky-950"
-          techstack={[
-            { icon: LOGOS.tanstack, name: "TanStack" },
-            { icon: LOGOS.react, name: "React" },
-            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
-            { icon: LOGOS.shadcn, name: "shadcn" },
-            { icon: LOGOS.jotai, name: "jotai" },
-            { icon: LOGOS.typescript, name: "TypeScript" },
-            { icon: LOGOS.netlify, name: "Netlify" },
           ]}
         />
         <ProjectCard

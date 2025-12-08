@@ -11,9 +11,27 @@ const Page = () => {
         <h1 className="heading py-16">All Projects</h1>
         <div className="max-w-xl md:max-w-5xl mx-auto px-10 gap-8">
           <ProjectSubheading
+            id="rafaelwitt"
+            title="Rafael Witt"
+            text="Since the deployment of the folkyourself web page, Rafael's team and I kept in touch, talking about the idea of rebuild his personal website. They wanted something that was personalized, had his upcoming shows and concerts, and other useful information, like his socials, the merch, youtube videos and such. I built it with the usual technology (Next.js, Tailwind, etc.). Since I wanted to give as much access and power to Rafael and his team, I added a dashboard with BetterAuth authentication, where they can modify the data shown in the concerts section."
+            href="https://rafaelwitt.com"
+            date="Aug 2025"
+            isGithub={false}
+            techstack={[
+              { icon: LOGOS.nextjs, name: "Next.js" },
+              { icon: LOGOS.react, name: "React" },
+              { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
+              { icon: LOGOS.jotai, name: "Jotai" },
+              { icon: LOGOS.betterauth, name: "BetterAuth" },
+              { icon: LOGOS.typescript, name: "TypeScript" },
+              { icon: LOGOS.shadcn, name: "shadcn" },
+              { icon: LOGOS.vercel, name: "Vercel" },
+            ]}
+          />
+          <ProjectSubheading
             id="apollotrack"
             title="ApolloTrack"
-            text="This one was fun and annoying to build (at the same time!). Recently, I have been trying harder at the gym. Following the trending fitness waves like everyone else, I realized that it isn't just about training hard. We clearly also need to eat well. I realized I needed to keep track of my calories, and there are a ton of options out there! The main problem is that none of them are actually free. I talked with a few friends and they all said the same thing: 'No way I am paying for that! I can just use an excel spreadsheet!!!'. Nobody likes excel. Let's be real. And here we are! I built this to help me and my friends track our calories. The fun part about building this, is that it doesn't have a database. Then you may ask: 'What do you mean there is no database?!', and I will just say: 'LOCALSTORAGE IS FIRE!!!!'. Yes. I know localStorage isn't ideal for storing sensitive data, it is vulnerable to Cross-Site Scripting, and all of that. But realistically speaking, it is just the stuff you eat and your macros that are being stored. Plus, by doing it this way, users do NOT need to login. They just use the website, and the information is stored in their own browser. We don't store any of that information. In my opinion, that is a win! The general problem of not using a database, and stricly using localStorage is that you lose some of  the stuff you took for granted, like SQL and ORMs. So you have to build your own data structures (which is kinda cool), but that takes some time. I used Jotai to access the LocalStorage atoms, and I personally really like the library. Also, to build this project I had to learn a very good chunk of stuff about form and tables. This was veeery cool, because I managed to learn more things about the TanStack universe. TanStack Form and TanStack Table are pretty awesome solutions to these problems, and shadcn did a very good job with his Table Component. In terms of framework, I used TanStack Start again, for the sake of practicing. The UI has a mobile first approach, since I planned on using the app mostly on my phone. I think it looks clean :)"
+            text="This project came from my need to track calories while getting more serious at the gym. Most apps are paid, and my friends refused to use anything more complex than a spreadsheet—so I built a free, simple alternative. The app runs entirely on localStorage, because I didn't want to setup a complex backend, with auth, databases and such. Because of that, I got to design my own lightweight data structures. I used Jotai for state + localStorage atoms, and learned a lot about forms and tables thanks to TanStack Form, TanStack Table, and shadcn’s table components. The app is built with TanStack Start, and designed mobile-first since I mostly use it on my phone."
             href="https://apollotrack.vercel.app"
             date="May 2025"
             isGithub={false}
@@ -25,23 +43,6 @@ const Page = () => {
               { icon: LOGOS.typescript, name: "TypeScript" },
               { icon: LOGOS.shadcn, name: "shadcn" },
               { icon: LOGOS.vercel, name: "Vercel" },
-            ]}
-          />
-          <ProjectSubheading
-            id="tidytabs"
-            title="TidyTabs"
-            text="I personally don't think the safari bookmarks are great. I wanted to have more control of them. Also wanted to get in touch with new technologies. Being a 1 stack Larry didn't sound good, so I wanted to get my hands on a new React framework. That's when I found out about TanStack Start. Altough the application didn't need SSR, nor RSC, I still opted into TanStack Start to learn its features. Also got into Netlify to deploy the application."
-            href="https://tidytabs.netlify.app"
-            isGithub={false}
-            date="Apr 2025"
-            techstack={[
-              { icon: LOGOS.tanstack, name: "TanStack" },
-              { icon: LOGOS.react, name: "React" },
-              { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
-              { icon: LOGOS.shadcn, name: "shadcn" },
-              { icon: LOGOS.jotai, name: "jotai" },
-              { icon: LOGOS.typescript, name: "TypeScript" },
-              { icon: LOGOS.netlify, name: "Netlify" },
             ]}
           />
           <ProjectSubheading
@@ -98,7 +99,7 @@ const Page = () => {
           <ProjectSubheading
             id="fitnesstrack"
             title="FitnessTrack"
-            text="It was always complicated to properly track my workouts, so I decided to create a solution. This personal project was built entirely with Next.js 14 and TailwindCSS. Utilizing Next.js's server actions, NeonDB as the cloud platform for the PostgreSQL database, Clerk's API for the authentication processes, and Prisma as the ORM used for the database models and migrations, this project allows users to track their workouts, on a daily basis. Even though, mobile responsiveness was only considered at the end of the project development, the upgraded version of this app (ApolloTrack), with more features, is currently being built."
+            text="This was my first 'Real' web application. It was always complicated to properly track my workouts, so I decided to build a webapp for that. This personal project was built with Next.js 14 and TailwindCSS. Utilizing Next.js's server actions, NeonDB as the cloud platform for the PostgreSQL database, Clerk's API for the authentication processes, and Prisma as the ORM used for the database models and migrations, this project allows users to track their workouts, on a daily basis. Even though, mobile responsiveness was only considered at the end of the project development, the upgraded version of this app (ApolloTrack) is now available."
             href="https://fitnesstrack.vercel.app"
             date="Nov 2023"
             isGithub={false}
