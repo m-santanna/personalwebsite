@@ -1,9 +1,12 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { JetBrains_Mono } from "next/font/google"
 import { cn } from "@/lib/utils"
 
-const inter = Inter({ subsets: ["latin"] })
+const jetbrains = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+})
 
 export const metadata: Metadata = {
   title: "Matheus",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className={cn(inter.className, "bg-strong")}>{children}</body>
+      <body className={cn(jetbrains.variable, "antialiased")}>{children}</body>
     </html>
   )
 }
