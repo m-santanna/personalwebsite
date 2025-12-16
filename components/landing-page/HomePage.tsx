@@ -31,11 +31,11 @@ function HomePage() {
         trailColor="rgb(245 158 11)"
         duration="7s"
       >
-        <div className="flex justify-center md:justify-normal max-h-1/2 md:min-h-full md:max-w-1/2 overflow-hidden animate-in rotate-180 duration-500">
+        <div className="flex justify-center md:justify-normal max-h-1/2 md:min-h-full md:max-w-1/2 overflow-hidden">
           <Image
             src={profileImage}
             alt="pfp"
-            className="object-cover hover:scale-110 transition-all duration-300 ease-in-out rotate-180"
+            className="object-cover hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </div>
         <div className="flex flex-col justify-center items-center gap-4 p-8 mt-0 md:mt-10">

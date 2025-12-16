@@ -82,7 +82,10 @@ function Background({ backgroundClassName }: { backgroundClassName?: string }) {
         className="absolute inset-0 top-1/2 h-full w-full rounded-full opacity-40"
       />
       {Array.from({ length: count }, (_, i) => (
-        <div key={i} className="relative h-full w-px bg-red-200 bg-opacity-10">
+        <div
+          key={i}
+          className="relative h-full w-px bg-red-200 bg-opacity-10 animate-in fade-in duration-1000 ease-in-out"
+        >
           {(1 + i) % 4 === 0 && <Beam index={i + 1} />}
         </div>
       ))}
