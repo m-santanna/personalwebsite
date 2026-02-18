@@ -3,6 +3,9 @@ import Nav from "@/components/Nav"
 import ProjectSubheading from "@/components/ProjectSubheading"
 import React from "react"
 
+// TODO:
+// Add jprac section here.
+
 const Page = () => {
   return (
     <div>
@@ -42,23 +45,6 @@ const Page = () => {
               { icon: LOGOS.jotai, name: "Jotai" },
               { icon: LOGOS.typescript, name: "TypeScript" },
               { icon: LOGOS.shadcn, name: "shadcn" },
-              { icon: LOGOS.vercel, name: "Vercel" },
-            ]}
-          />
-          <ProjectSubheading
-            id="langprac"
-            title="langprac"
-            text="I've been studying Japanese for a whole year now, but recently I felt like my Katakana skills degraded. I wanted a very simple and fast way to practice. So I built this in just a day, but new features and ideas kept coming. Friends started using it as well. Now the app even supports russian 🤣. I needed mostly client-side features, so I decided to build a SPA, and for the state management, I learned Jotai. Super good library! Tailwind and shadcn are a must nowadays, and I used Next.js for the very few server code."
-            href="https://langprac.vercel.app"
-            isGithub={false}
-            date="Apr 2025"
-            techstack={[
-              { icon: LOGOS.nextjs, name: "Next.js" },
-              { icon: LOGOS.react, name: "React" },
-              { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
-              { icon: LOGOS.shadcn, name: "shadcn" },
-              { icon: LOGOS.jotai, name: "jotai" },
-              { icon: LOGOS.typescript, name: "TypeScript" },
               { icon: LOGOS.vercel, name: "Vercel" },
             ]}
           />

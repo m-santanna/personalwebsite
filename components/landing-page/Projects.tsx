@@ -1,7 +1,7 @@
 import { LOGOS } from "@/components/Logos"
 import ProjectCard from "../ProjectCard"
 import rafaelwittimg from "@/images/rafaelwitt.png"
-import langpracimg from "@/images/langprac.png"
+import jpracimg from "@/images/jprac.png"
 import folkyourselfimg from "@/images/folkyourself.png"
 import apollotrackimg from "@/images/apollotrack.png"
 
@@ -13,6 +13,23 @@ function Projects() {
     <section className="w-full min-h-[calc(100vh-80px)] bg-strong">
       <h1 className="heading py-16">My favorite Projects</h1>
       <div className="mx-auto max-w-xl md:max-w-5xl px-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ProjectCard
+          title="jprac"
+          image={jpracimg}
+          description="Practice japanese with friends in real-time."
+          link={"/projects#jprac"}
+          visitLink="https://jprac.vercel.app"
+          githubLink="https://github.com/m-santanna/jprac"
+          className="hover:to-red-950"
+          techstack={[
+            { icon: LOGOS.nextjs, name: "Next.js" },
+            { icon: LOGOS.react, name: "React" },
+            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
+            { icon: LOGOS.shadcn, name: "shadcn" },
+            { icon: LOGOS.typescript, name: "TypeScript" },
+            { icon: LOGOS.vercel, name: "Vercel" },
+          ]}
+        />
         <ProjectCard
           title="Rafael Witt"
           image={rafaelwittimg}
@@ -48,24 +65,7 @@ function Projects() {
             { icon: LOGOS.vercel, name: "Vercel" },
           ]}
         />
-        <ProjectCard
-          title="langprac"
-          image={langpracimg}
-          description="Simple and fun way to practice new alphabets."
-          link={"/projects#langprac"}
-          visitLink="https://langprac.vercel.app"
-          githubLink="https://github.com/m-santanna/langprac"
-          className="hover:to-red-950"
-          techstack={[
-            { icon: LOGOS.nextjs, name: "Next.js" },
-            { icon: LOGOS.react, name: "React" },
-            { icon: LOGOS.tailwindcss, name: "TailwindCSS" },
-            { icon: LOGOS.shadcn, name: "shadcn" },
-            { icon: LOGOS.jotai, name: "jotai" },
-            { icon: LOGOS.typescript, name: "TypeScript" },
-            { icon: LOGOS.vercel, name: "Vercel" },
-          ]}
-        />
+
         <ProjectCard
           title="folkyourself"
           image={folkyourselfimg}
