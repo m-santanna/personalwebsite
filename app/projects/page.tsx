@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <div>
       <Nav />
-      <section className="w-full min-h-[calc(100vh-80px)] bg-strong">
+      <section className="w-full min-h-[calc(100vh-80px)]">
         <h1 className="heading py-16">All Projects</h1>
         <div className="max-w-xl md:max-w-5xl mx-auto px-10 gap-8">
           <ProjectSubheading
