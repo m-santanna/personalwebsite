@@ -2,8 +2,8 @@
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans">
-      <div className="bg-background">testing</div>
+    <div className="flex min-h-[calc(100vh-5rem)] items-center justify-center font-sans">
+      testing something
     </div>
   );
 }
