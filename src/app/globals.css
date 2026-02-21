@@ -121,7 +121,7 @@ html[data-accent="blue"]      { --accent: var(--blue); }
 html[data-accent="lavender"]  { --accent: var(--lavender); }
 
 @layer base {
-  * {
+  body {
     @apply bg-background text-foreground;
   }
 }

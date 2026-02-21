@@ -46,7 +46,7 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: ()
   return (
     <>
       <div
-        className={`fixed inset-0 bg-black/60 z-40 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        className={`fixed inset-0 min-h-screen min-w-screen bg-black/60 z-40 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
         onClick={toggleSidebar}
       />
       <div className={`fixed top-0 right-0 h-screen w-72 bg-background z-50 border-l border-white/5 transition-all duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
@@ -102,7 +102,7 @@ function Navbar() {
   const toggleSidebar = () => setIsOpen(!isOpen)
 
   return (
-    <header className="z-20 sticky top-0">
+    <header className="z-20 sticky top-0 bg-background/70 backdrop-blur-md">
       <nav className="h-20 flex justify-between items-center px-8 sm:px-20">
         <DynamicPathname path={path} />
         <UsefulLinks toggleSidebar={toggleSidebar} />
