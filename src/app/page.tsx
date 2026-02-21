@@ -28,7 +28,7 @@ export default function Home() {
     <div className="mx-8 sm:mx-30 space-y-10 mb-6">
       {/* HERO SECTION */}
       <div className="mt-10 flex flex-col gap-6">
-        <div className="text-primary font-bold text-3xl flex flex-col md:flex-row items-center gap-1 sm:gap-4">
+        <div className="text-primary font-bold text-3xl flex flex-col md:flex-row gap-1 sm:gap-4">
           <h1>
             Hello World!
           </h1>

@@ -94,7 +94,7 @@ export function InfoTabs() {
                   <>
                     <p>
                       I was initially brought to be a Consultant. As I talked to the team, we realized there was a
-                      possibility to improve the HR's process of contract drafting by creating AI automations.
+                      possibility to improve the HR&apos;s process of contract drafting by creating AI automations.
                     </p>
                     <p>
                       Therefore, I was assigned to architect and build the AI platform from the ground up.
@@ -103,7 +103,7 @@ export function InfoTabs() {
                     </p>
 
                     <p>
-                      It wasn't just about the AI, though. I built the whole system architecture, from secure,
+                      It wasn&apos;t just about the AI, though. I built the whole system architecture, from secure,
                       company-scoped dynamic routes to role-based access and data modeling with NeonDB and BetterAuth.
                       It was pretty rewarding to see it cut down the HR team&apos;s manual drafting time by about half.
                     </p>
