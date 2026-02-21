@@ -10,7 +10,7 @@ function DynamicPathname({ path }: { path: string }) {
   const segments = path.split('/').filter((s) => s !== "");
 
   return (
-    <div className="flex items-center gap-0.5 font-semibold text-md sm:text-lg">
+    <div className="flex items-center gap-0.5 font-semibold text-base sm:text-lg">
       <Link href={'/'} className="hover:opacity-50 transition-all duration-500">
         <span className="text-accent text-xl">~</span>
       </Link>
@@ -57,12 +57,12 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: ()
               <X className="size-4" />
             </button>
           </div>
-          <nav className="p-6 flex sm:hidden flex-col gap-6 font-medium text-md border-b border-foreground/40">
+          <nav className="p-6 flex sm:hidden flex-col gap-6 font-medium text-base border-b border-foreground/40">
             <Link href={'/about'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">About</Link >
             <Link href={'/projects'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Projects</Link>
             <Link href={'/blog'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Blog</Link>
           </nav>
-          <nav className="p-6 flex flex-col gap-6 font-medium text-md">
+          <nav className="p-6 flex flex-col gap-6 font-medium text-base">
             <Link href={'/resume'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Resume</Link>
             <Link href={'/contact'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Contact</Link>
             <Link href={'/technologies'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Technologies</Link>
@@ -79,7 +79,7 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: ()
 function UsefulLinks({ toggleSidebar }: { toggleSidebar: () => void }) {
   return (
     <>
-      <div className="flex items-center sm:hidden gap-10 font-semibold text-md">
+      <div className="flex items-center sm:hidden gap-10 font-semibold text-base">
         <button onClick={toggleSidebar} className="hover:text-accent transition-all duration-500 cursor-pointer">
           <Menu className="size-5" />
         </button>
