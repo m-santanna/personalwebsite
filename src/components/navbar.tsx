@@ -4,35 +4,40 @@ import { Menu, X } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
+import ThemePicker from "./theme-picker"
 
 function DynamicPathname({ path }: { path: string }) {
   const segments = path.split('/').filter((s) => s !== "");
 
   return (
-    <div className="flex gap-0.5 font-semibold text-lg">
+    <div className="flex items-center gap-0.5 font-semibold text-md sm:text-lg">
       <Link href={'/'} className="hover:opacity-50 transition-all duration-500">
         <span className="text-accent text-xl">~</span>
       </Link>
+      <span>/</span>
       {segments.map((segment, index) => {
         const url = `/${segments.slice(0, index + 1).join('/')}`;
         const isLast = index === segments.length - 1;
 
         return (
           <div key={url} className="flex gap-0.5">
-            <span>/</span>
             {isLast ? (
               <span>{segment}</span>
             ) : (
-              <Link
-                href={url}
-                className="hover:text-accent transition-all duration-500"
-              >
-                {segment}
-              </Link>
+              <>
+                <Link
+                  href={url}
+                  className="hover:text-accent transition-all duration-500"
+                >
+                  {segment}
+                </Link>
+                <span>/</span>
+              </>
             )}
           </div>
         );
       })}
+      <span className="animate-pulse text-accent font-extrabold">_</span>
     </div>
   )
 }
@@ -62,6 +67,9 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: ()
             <Link href={'/contact'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Contact</Link>
             <Link href={'/technologies'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Technologies</Link>
           </nav>
+          <div className="mx-auto">
+            <ThemePicker />
+          </div>
         </div>
       </div>
     </>
@@ -71,9 +79,9 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: ()
 function UsefulLinks({ toggleSidebar }: { toggleSidebar: () => void }) {
   return (
     <>
-      <div className="flex sm:hidden gap-10 font-semibold text-sm">
+      <div className="flex items-center sm:hidden gap-10 font-semibold text-md">
         <button onClick={toggleSidebar} className="hover:text-accent transition-all duration-500 cursor-pointer">
-          <Menu className="size-6" />
+          <Menu className="size-5" />
         </button>
       </div>
       <div className="hidden sm:flex gap-10 font-semibold text-sm items-center">
