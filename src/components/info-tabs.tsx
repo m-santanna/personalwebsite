@@ -8,12 +8,13 @@ import Link from "next/link"
 import { ChevronUp, ChevronDown } from "lucide-react"
 import { GM_FLOW_URL } from "@/lib/constants"
 import { StyledSpan } from "./styled-span"
+import { ProjectCarousel } from "./project-carousel"
 
 type Tab = "Education" | "Professional" | "Projects"
 const ballsClassName = "absolute -left-1.5 top-2 w-2.5 h-2.5 rounded-full animate-in duration-300 transition-all fade-in"
 
 export function InfoTabs() {
-  const [activeTab, setActiveTab] = useState<Tab>("Professional")
+  const [activeTab, setActiveTab] = useState<Tab>("Projects")
   const [showMore, setShowMore] = useState(false)
   const tabs: Tab[] = ["Projects", "Professional", "Education"]
 
@@ -125,8 +126,8 @@ export function InfoTabs() {
           </div>
         )}
         {activeTab === "Projects" && (
-          <div className="space-y-4">
-            <p className="text-primary/80">Content for projects goes here...</p>
+          <div className="animate-in fade-in duration-500">
+            <ProjectCarousel />
           </div>
         )}
       </div>

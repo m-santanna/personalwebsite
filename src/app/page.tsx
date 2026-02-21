@@ -37,7 +37,7 @@ export default function Home() {
           </h1>
         </div>
         <p className="max-w-2xl text-base sm:text-lg">
-          I am currently based at Lisbon, Portugal. I am a <StyledSpan className="cursor-default" text="Full-Stack Developer" textOnHover="Full-Stack Developer" /> that likes building.
+          I am currently based at Lisbon, Portugal. I am a <span className="text-primary">Full-Stack Developer</span> that enjoys building stuff.
         </p>
         <p className="max-w-2xl text-base sm:text-lg">
           I did some freelancing for websites like <Link target="_blank" href={RAFAELWITT_URL}><StyledSpan textOnHover="Rafael Witt" text="Rafael Witt" /></Link> and <Link target="_blank" href={FOLKYOURSELF_URL}><StyledSpan textOnHover="FolkYourself" text="FolkYourself" /></Link>.
@@ -52,7 +52,7 @@ export default function Home() {
       </div>
 
       {/* MISC SECTION */}
-      <div className="h-55">
+      <div className="mt-30">
       </div>
     </div>
   );

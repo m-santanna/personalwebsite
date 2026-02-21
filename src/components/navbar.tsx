@@ -49,7 +49,7 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: ()
         className={`fixed inset-0 min-h-screen min-w-screen bg-black/60 z-40 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
         onClick={toggleSidebar}
       />
-      <div className={`fixed top-0 right-0 h-screen w-72 bg-background z-50 border-l border-white/5 transition-all duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed top-0 right-0 h-screen w-72 bg-background z-50 border-l border-white/5 animate-in fade-in transition-all duration-500 ease-in-out ${isOpen ? 'block' : 'hidden'}`}>
         <div className="flex flex-col">
           <div className="flex justify-between p-6 border-b border-foreground/40">
             <h1 className="text-accent font-bold text-lg">Stuff...</h1>
