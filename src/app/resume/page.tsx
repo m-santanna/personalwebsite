@@ -3,7 +3,7 @@ import resume from "@/images/resume.png"
 
 function ResumePage() {
   return (
-    <div>
+    <div className="flex items-center w-screen justify-center">
       <Image src={resume} alt="Resume Image" />
     </div>
   )

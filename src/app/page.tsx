@@ -2,12 +2,7 @@ import { Github, Instagram, LinkedIn } from "@/components/logos"
 import { StyledSpan } from "@/components/styled-span"
 import { InfoTabs } from "@/components/info-tabs"
 import Link from "next/link"
-
-const GM_FLOW_URL = "https://pt.linkedin.com/company/gmflow"
-const JPRAC_URL = "https://jprac.vercel.app"
-const GITHUB_PROFILE_URL = "https://github.com/m-santanna"
-const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/m-santanna"
-const INSTAGRAM_PROFILE_URL = "https://instagram.com/m_sassagawa"
+import { FOLKYOURSELF_URL, GITHUB_PROFILE_URL, INSTAGRAM_PROFILE_URL, JPRAC_URL, LINKEDIN_PROFILE_URL, RAFAELWITT_URL } from "@/lib/constants"
 
 function Socials() {
   return (
@@ -42,10 +37,11 @@ export default function Home() {
           </h1>
         </div>
         <p className="max-w-2xl text-base sm:text-lg">
-          I am currently based at Lisbon, Portugal. I worked at <Link target="_blank" href={GM_FLOW_URL}><StyledSpan text="GM Flow" textOnHover="GM Flow" /></Link> as a Full Stack Developer Intern, and built some cool stuff with AI to make HR's life easier.
+          I am currently based at Lisbon, Portugal. I am a <StyledSpan className="cursor-default" text="Full-Stack Developer" textOnHover="Full-Stack Developer" /> that likes building.
         </p>
         <p className="max-w-2xl text-base sm:text-lg">
-          I also built <Link target="_blank" href={JPRAC_URL}><StyledSpan textOnHover="jprac" text="jprac" /></Link>, which is my favorite project from the bunch. In short, it allows friends to compete in real-time, and see who knows the japanese alphabet(s) better!
+          I did some freelancing for websites like <Link target="_blank" href={RAFAELWITT_URL}><StyledSpan textOnHover="Rafael Witt" text="Rafael Witt" /></Link> and <Link target="_blank" href={FOLKYOURSELF_URL}><StyledSpan textOnHover="FolkYourself" text="FolkYourself" /></Link>.
+          I also built <Link target="_blank" href={JPRAC_URL}><StyledSpan textOnHover="jprac" text="jprac" /></Link>, which is my favorite project. In short, it allows friends to compete in real-time, to see who knows the japanese alphabet(s) better!
         </p>
         <Socials />
       </div>

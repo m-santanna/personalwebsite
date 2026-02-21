@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="mocha" data-accent="mauve" className={jetbrainsMono.variable}>
+    <html lang="en" data-theme="mocha" data-accent="peach" className={jetbrainsMono.variable}>
       <body
         className="antialiased"
       >
