@@ -7,10 +7,7 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import * as Logos from "./logos"
 import { JPRAC_URL, RAFAELWITT_URL, FOLKYOURSELF_URL } from "@/lib/constants"
-import Image, { StaticImageData } from "next/image"
-import jpracSrc from "@/images/jprac.png"
-import rafaelwittSrc from "@/images/rafaelwitt.png"
-import folkyourselfSrc from "@/images/folkyourself.png"
+import Image from "next/image"
 
 export interface Project {
   title: string
@@ -18,7 +15,7 @@ export interface Project {
   page: string
   url: string
   tech: (keyof typeof Logos)[]
-  imageSrc: StaticImageData
+  imageSrc: string
 }
 
 export const PROJECTS: Project[] = [
@@ -27,8 +24,8 @@ export const PROJECTS: Project[] = [
     description: "A real-time competitive game to practice Japanese. Compete with friends to see who knows Hiragana, Katakana and N5/N4 Kanji best.",
     page: "/projects/jprac",
     url: JPRAC_URL,
-    tech: ["Nextjs", "React", "Tailwind", "Redis", "ElysiaJS", "Upstash", "TypeScript"],
-    imageSrc: jpracSrc,
+    tech: ["Nextjs", "React", "Tailwind", "Redis", "ElysiaJS", "TypeScript", "Docker"],
+    imageSrc: "/images/jprac.png",
   },
   {
     title: "Rafael Witt",
@@ -36,7 +33,7 @@ export const PROJECTS: Project[] = [
     page: "/projects/rafaelwitt",
     url: RAFAELWITT_URL,
     tech: ["Nextjs", "React", "Tailwind", "Turso", "TypeScript"],
-    imageSrc: rafaelwittSrc,
+    imageSrc: "/images/rafaelwitt.png",
   },
   {
     title: "FolkYourself",
@@ -44,7 +41,7 @@ export const PROJECTS: Project[] = [
     page: "/projects/folkyourself",
     url: FOLKYOURSELF_URL,
     tech: ["Nextjs", "React", "Tailwind", "Motion", "TypeScript"],
-    imageSrc: folkyourselfSrc,
+    imageSrc: "/images/folkyourself.png",
   },
 ]
 
@@ -97,12 +94,13 @@ export function ProjectCarousel() {
             className="min-w-full sm:min-w-[calc(50%-8px)] snap-start group/card cursor-pointer"
           >
             <div className="h-full flex flex-col bg-surface/40 rounded-2xl border border-primary/5 overflow-hidden hover:border-accent/50 transition-colors">
-              {/* Banner Placeholder */}
+              {/* Image Container */}
               <div className="aspect-video w-full flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-linear-to-b from-transparent to-surface/20 z-10" />
                 <Image
                   src={project.imageSrc}
                   alt={project.title}
+                  fill
                   className="object-cover transition-transform duration-500 group-hover/card:scale-110"
                 />
               </div>

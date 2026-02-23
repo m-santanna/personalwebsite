@@ -48,7 +48,7 @@ function Footer() {
           <span className="text-foreground/60">Matheus S. Sant&apos;Anna</span>
           <span className="size-1 bg-accent/30 rounded-full" />
           <div className="flex gap-4">
-            <Link href="/resume" className="hover:text-accent transition-colors">Resume</Link>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Resume</a>
             <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
           </div>
         </div>

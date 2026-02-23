@@ -63,7 +63,7 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: ()
             <Link href={'/blog'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Blog</Link>
           </nav>
           <nav className="p-6 flex flex-col gap-6 font-medium text-base">
-            <Link href={'/resume'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Resume</Link>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Resume</a>
             <Link href={'/contact'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Contact</Link>
             <Link href={'/technologies'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Technologies</Link>
           </nav>
