@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Cascadia_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-sans' })
+const cascadia = Cascadia_Mono({ subsets: ['latin'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
   title: "MSS",
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="mocha" data-accent="peach" className={jetbrainsMono.variable}>
+    <html lang="en" data-theme="mocha" data-accent="peach" className={cascadia.variable}>
       <body
         className="antialiased"
       >
