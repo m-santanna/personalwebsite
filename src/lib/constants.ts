@@ -1,5 +1,5 @@
 export const GM_FLOW_URL = "https://pt.linkedin.com/company/gmflow"
-export const JPRAC_URL = "https://jprac.vercel.app"
+export const JPRAC_URL = "https://jprac.xyz"
 export const GITHUB_PROFILE_URL = "https://github.com/m-santanna"
 export const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/m-santanna"
 export const INSTAGRAM_PROFILE_URL = "https://instagram.com/m_sassagawa"

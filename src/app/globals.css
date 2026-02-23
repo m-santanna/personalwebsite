@@ -125,3 +125,13 @@ html[data-accent="lavender"]  { --accent: var(--lavender); }
     @apply bg-background text-foreground;
   }
 }
+
+.pointer-only {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .pointer-only {
+    display: flex;
+  }
+}
