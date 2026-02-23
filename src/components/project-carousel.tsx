@@ -85,32 +85,6 @@ export function ProjectCarousel() {
 
   return (
     <div className="group relative w-full">
-      {/* Navigation Buttons */}
-      <div className="absolute -left-5 top-4/9 -translate-y-1/2 z-10">
-        <button
-          onClick={() => scroll("left")}
-          disabled={!canScrollLeft}
-          className={cn(
-            "p-2 rounded-full bg-surface/80 backdrop-blur-sm border border-primary/10 transition-all shadow-lg",
-            canScrollLeft ? "opacity-100 hover:bg-accent hover:text-white cursor-pointer" : "opacity-0 pointer-events-none"
-          )}
-        >
-          <ChevronLeft className="size-5" />
-        </button>
-      </div>
-      <div className="absolute -right-5 top-4/9 -translate-y-1/2 z-10">
-        <button
-          onClick={() => scroll("right")}
-          disabled={!canScrollRight}
-          className={cn(
-            "p-2 rounded-full bg-surface/80 backdrop-blur-sm border border-primary/10 transition-all shadow-lg",
-            canScrollRight ? "opacity-100 hover:bg-accent hover:text-white cursor-pointer" : "opacity-0 pointer-events-none"
-          )}
-        >
-          <ChevronRight className="size-5" />
-        </button>
-      </div>
-
       {/* Carousel */}
       <div
         ref={scrollRef}
@@ -125,8 +99,12 @@ export function ProjectCarousel() {
             <div className="h-full flex flex-col bg-surface/40 rounded-2xl border border-primary/5 overflow-hidden hover:border-accent/50 transition-colors">
               {/* Banner Placeholder */}
               <div className="aspect-video w-full flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-linear-to-b from-transparent to-surface/20" />
-                <Image src={project.imageSrc} alt={project.title} />
+                <div className="absolute inset-0 bg-linear-to-b from-transparent to-surface/20 z-10" />
+                <Image
+                  src={project.imageSrc}
+                  alt={project.title}
+                  className="object-cover transition-transform duration-500 group-hover/card:scale-110"
+                />
               </div>
 
               {/* Content */}
@@ -168,6 +146,33 @@ export function ProjectCarousel() {
           </div>
         ))}
       </div>
+
+      {/* Navigation Buttons */}
+      <div className="absolute -left-5 top-4/9 -translate-y-1/2 z-10">
+        <button
+          onClick={() => scroll("left")}
+          disabled={!canScrollLeft}
+          className={cn(
+            "p-2 rounded-full bg-surface/80 backdrop-blur-sm border border-primary/10 transition-all shadow-lg",
+            canScrollLeft ? "opacity-100 hover:bg-accent hover:text-white cursor-pointer" : "opacity-0 pointer-events-none"
+          )}
+        >
+          <ChevronLeft className="size-5" />
+        </button>
+      </div>
+      <div className="absolute -right-5 top-4/9 -translate-y-1/2 z-10">
+        <button
+          onClick={() => scroll("right")}
+          disabled={!canScrollRight}
+          className={cn(
+            "p-2 rounded-full bg-surface/80 backdrop-blur-sm border border-primary/10 transition-all shadow-lg",
+            canScrollRight ? "opacity-100 hover:bg-accent hover:text-white cursor-pointer" : "opacity-0 pointer-events-none"
+          )}
+        >
+          <ChevronRight className="size-5" />
+        </button>
+      </div>
+
 
       <div className="mt-6 flex justify-end">
 

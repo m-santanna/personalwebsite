@@ -39,7 +39,7 @@ function Footer() {
         </div>
 
         <p className="flex gap-2 text-sm font-mono">
-          [<span>git commit -m "feat: added footer"</span>]
+          [<span>git commit -m &quot;feat: added footer&quot;</span>]
         </p>
 
         <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.2em] font-mono text-foreground/50 flex-wrap justify-center">

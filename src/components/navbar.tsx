@@ -12,7 +12,7 @@ function DynamicPathname({ path }: { path: string }) {
   return (
     <div className="flex items-center gap-0.5 font-semibold text-base sm:text-lg">
       <Link href={'/'} className="hover:opacity-50 transition-all duration-500">
-        <span className="text-accent text-xl">~</span>
+        <span className="text-accent">$HOME</span>
       </Link>
       <span>/</span>
       {segments.map((segment, index) => {
@@ -102,7 +102,7 @@ function Navbar() {
   const toggleSidebar = () => setIsOpen(!isOpen)
 
   return (
-    <header className="z-20 sticky top-0 bg-background/70 backdrop-blur-md">
+    <header className="z-30 sticky top-0 bg-background/70 backdrop-blur-sm">
       <nav className="h-20 flex justify-between items-center px-8 sm:px-20">
         <DynamicPathname path={path} />
         <UsefulLinks toggleSidebar={toggleSidebar} />
