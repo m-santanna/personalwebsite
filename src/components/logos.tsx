@@ -533,12 +533,6 @@ export const ElysiaJS = (props: React.SVGProps<SVGSVGElement>) => (
     {...props}
     width="1em"
     height="1em"
-    style={{
-      transform: "matrix(1.11388,0,0,1.11388,0,0)",
-      transformOrigin: "50% 50%",
-      cursor: "move",
-      transition: "transform 200ms ease-in-out 0s",
-    }}
     viewBox="0 0 4040 4040"
   >
     <defs>

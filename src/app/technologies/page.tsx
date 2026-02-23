@@ -91,7 +91,7 @@ function TechnologiesPage() {
                     className="flex items-center gap-2 group"
                     title={item.name}
                   >
-                    <Icon className=" size-5 grayscale data-[theme='latte']:opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+                    <Icon className="size-5 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
                     <span className="text-xs font-medium text-primary/60 group-hover:text-primary transition-colors duration-300 cursor-default">
                       {item.name}
                     </span>
