@@ -17,12 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="mocha" data-accent="peach" className={cascadia.variable}>
+    <html lang="en" data-theme="mocha" data-accent="sapphire" className={cascadia.variable}>
       <body
-        className="antialiased"
+        className="min-h-screen flex flex-col justify-between antialiased"
       >
         <Navbar />
-        {children}
+        <main className="flex-1">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

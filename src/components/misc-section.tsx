@@ -111,7 +111,11 @@ function ClickCounter() {
           Click me!
         </button>
         <p className="text-xs font-mono text-primary/50">
-          <span>You&apos;ve clicked {localClicks.toLocaleString()} times</span>
+          {
+            localClicks === 1
+              ? <span>You&apos;ve clicked 1 time</span>
+              : <span>You&apos;ve clicked {localClicks.toLocaleString()} times</span>
+          }
         </p>
       </div>
     </MiscCard>

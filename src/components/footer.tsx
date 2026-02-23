@@ -6,7 +6,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/5 py-10 mt-20 relative overflow-hidden">
+    <footer className="py-10 mt-20 relative overflow-hidden">
       <div className="mx-3 sm:mx-30 flex flex-col items-center gap-8 relative">
         <div className="flex gap-8 items-center">
           <Link
