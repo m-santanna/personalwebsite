@@ -3,8 +3,7 @@
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useState } from "react"
-import ThemePicker from "./theme-picker"
+import { useState, useEffect } from "react"
 
 function DynamicPathname({ path }: { path: string }) {
   const segments = path.split('/').filter((s) => s !== "");
@@ -57,19 +56,12 @@ function Sidebar({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: ()
               <X className="size-4" />
             </button>
           </div>
-          <nav className="p-6 flex sm:hidden flex-col gap-6 font-medium text-base border-b border-foreground/40">
+          <nav className="p-6 flex sm:hidden flex-col gap-6 font-medium text-base">
             <Link href={'/about'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">About</Link >
-            <Link href={'/projects'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Projects</Link>
-            <Link href={'/blog'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Blog</Link>
-          </nav>
-          <nav className="p-6 flex flex-col gap-6 font-medium text-base">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Resume</a>
-            <Link href={'/contact'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Contact</Link>
             <Link href={'/technologies'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Technologies</Link>
+            <Link href={'/blog'} onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Blog</Link>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" onClick={toggleSidebar} className="hover:text-accent transition-all duration-500">Resume</a>
           </nav>
-          <div className="mx-auto">
-            <ThemePicker />
-          </div>
         </div>
       </div>
     </>
@@ -84,13 +76,11 @@ function UsefulLinks({ toggleSidebar }: { toggleSidebar: () => void }) {
           <Menu className="size-5" />
         </button>
       </div>
-      <div className="hidden sm:flex gap-10 font-semibold text-sm items-center">
+      <div className="hidden sm:flex gap-8 font-semibold text-sm items-center">
         <Link href={'/about'} className="hover:text-accent transition-all duration-500">About</Link >
-        <Link href={'/projects'} className="hover:text-accent transition-all duration-500">Projects</Link>
         <Link href={'/blog'} className="hover:text-accent transition-all duration-500">Blog</Link>
-        <button onClick={toggleSidebar} className="hover:text-accent transition-all duration-500 cursor-pointer">
-          Etc..
-        </button>
+        <Link href={'/technologies'} className="hover:text-accent transition-all duration-500">Tech</Link>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-500">Resume</a>
       </div>
     </>
   )
@@ -101,9 +91,19 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const toggleSidebar = () => setIsOpen(!isOpen)
 
+  useEffect(() => {
+    const localStorageTheme = localStorage.getItem("theme")
+    const localStorageAccent = localStorage.getItem("accent")
+
+    if (localStorageAccent)
+      document.documentElement.setAttribute("data-accent", localStorageAccent)
+    if (localStorageTheme)
+      document.documentElement.setAttribute("data-theme", localStorageTheme)
+  }, [])
+
   return (
     <header className="z-30 sticky top-0 bg-background/70 backdrop-blur-sm">
-      <nav className="h-20 flex justify-between items-center px-8 sm:px-20">
+      <nav className="h-20 flex justify-between items-center max-w-272 mx-auto px-8 sm:px-10">
         <DynamicPathname path={path} />
         <UsefulLinks toggleSidebar={toggleSidebar} />
         <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />

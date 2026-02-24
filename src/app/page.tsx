@@ -1,34 +1,51 @@
-import { Github, Instagram, LinkedIn } from "@/components/logos"
+import { Github, Gmail, Instagram, LinkedIn } from "@/components/logos"
 import { StyledSpan } from "@/components/styled-span"
 import { InfoTabs } from "@/components/info-tabs"
 import { MiscSection } from "@/components/misc-section"
 import Link from "next/link"
-import { FOLKYOURSELF_URL, GITHUB_PROFILE_URL, GM_FLOW_URL, INSTAGRAM_PROFILE_URL, JPRAC_URL, LINKEDIN_PROFILE_URL, RAFAELWITT_URL } from "@/lib/constants"
+import { FOLKYOURSELF_URL, GITHUB_PROFILE_URL, GM_FLOW_URL, INSTAGRAM_PROFILE_URL, JPRAC_URL, LINKEDIN_PROFILE_URL, RAFAELWITT_URL, EMAIL_ADDRESS } from "@/lib/constants"
+
+const SOCIALS = [
+  {
+    label: "Github",
+    icon: <Github className="bg-black rounded-full" />,
+    href: GITHUB_PROFILE_URL
+  },
+  {
+    label: "LinkedIn",
+    icon: <LinkedIn />,
+    href: LINKEDIN_PROFILE_URL
+  },
+  {
+    label: "Gmail",
+    icon: <Gmail />,
+    href: "mailto:" + EMAIL_ADDRESS
+  },
+  {
+    label: "Instagram",
+    icon: <Instagram />,
+    href: INSTAGRAM_PROFILE_URL
+  },
+]
 
 function Socials() {
   return (
-    <div className="mt-2 flex items-center gap-4 font-medium text-sm sm:text-base">
-      <Link className="flex items-center gap-2 hover:text-accent" href={GITHUB_PROFILE_URL} target="_blank">
-        <Github className="bg-black grayscale rounded-full" />
-        Github
-      </Link>
-      <Link className="flex items-center gap-2 hover:text-accent" href={LINKEDIN_PROFILE_URL} target="_blank">
-        <LinkedIn className="grayscale" />
-        Linkedin
-      </Link>
-      <Link className="flex items-center gap-2 hover:text-accent" href={INSTAGRAM_PROFILE_URL} target="_blank">
-        <Instagram className="grayscale" />
-        Instagram
-      </Link>
+    <div className="mt-2 flex items-center gap-4 font-medium text-sm sm:text-base flex-wrap">
+      {SOCIALS.map((social, idx) => (
+        <Link key={idx} className="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 flex items-center gap-2 hover:text-accent" href={social.href} target="_blank">
+          {social.icon}
+          {social.label}
+        </Link>
+      ))}
     </div>
   )
 }
 
 export default function Home() {
   return (
-    <div className="mx-8 sm:mx-30 space-y-10 mb-6">
+    <div className="space-y-40 mb-6">
       {/* HERO SECTION */}
-      <div className="mt-10 flex flex-col gap-6">
+      <div className="mt-10 md:mt-22 flex flex-col gap-6">
         <div className="text-primary font-bold text-3xl flex flex-col md:flex-row gap-1 sm:gap-4">
           <h1>
             Hello World!
@@ -48,14 +65,10 @@ export default function Home() {
       </div>
 
       {/* GENERAL SECTION */}
-      <div className="mt-30">
-        <InfoTabs />
-      </div>
+      <InfoTabs />
 
       {/* MISC SECTION */}
-      <div className="mt-30 pb-10">
-        <MiscSection />
-      </div>
+      <MiscSection />
     </div>
   );
 }

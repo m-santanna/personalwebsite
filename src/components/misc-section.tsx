@@ -2,9 +2,10 @@
 
 import { useState, useEffect, useCallback, useRef } from "react"
 import { getGlobalClicks, increaseGlobalClicksBy } from "@/lib/actions"
-import { Clock, Quote, Keyboard, Loader2, Grid3X3, CircleDot } from "lucide-react"
+import { Clock, Quote, Keyboard, Loader2, Grid3X3, CircleDot, Palette, Gauge } from "lucide-react"
 import { cn } from "@/lib/utils"
 import confetti from "canvas-confetti"
+import ThemePicker from "./theme-picker"
 
 const STORAGE_KEY = "clicks"
 
@@ -367,6 +368,169 @@ function EasterEgg() {
   )
 }
 
+// ─── Theme Card ────────────────────────────────────────
+function ThemeCard() {
+  return (
+    <MiscCard>
+      <CardHeader icon={<Palette className="size-4 text-accent" />} title="Theme" />
+      <ThemePicker />
+    </MiscCard>
+  )
+}
+
+// ─── Typing Speed Test ─────────────────────────────────
+const TYPING_SENTENCES = [
+  "The quick brown fox jumps over the lazy dog.",
+  "Every great developer was once a beginner.",
+  "Code is like humor. When you have to explain it, it's bad.",
+  "First, solve the problem. Then, write the code.",
+  "Simplicity is the soul of efficiency.",
+  "Talk is cheap. Show me the code.",
+  "Fix the cause, not the symptom.",
+  "Make it work, make it right, make it fast.",
+]
+
+const TYPING_BEST_KEY = "typing-best-wpm"
+
+function getStoredBest(): number {
+  if (typeof window === "undefined") return 0
+  const stored = localStorage.getItem(TYPING_BEST_KEY)
+  return stored ? Number(stored) : 0
+}
+
+function TypingSpeedTest() {
+  const [state, setState] = useState<"idle" | "running" | "done">("idle")
+  const [sentence, setSentence] = useState("")
+  const [input, setInput] = useState("")
+  const [startTime, setStartTime] = useState(0)
+  const [wpm, setWpm] = useState(0)
+  const [accuracy, setAccuracy] = useState(100)
+  const [bestWpm, setBestWpm] = useState(0)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    setBestWpm(getStoredBest())
+  }, [])
+
+  const pickSentence = () => TYPING_SENTENCES[Math.floor(Math.random() * TYPING_SENTENCES.length)]
+
+  const start = () => {
+    const s = pickSentence()
+    setSentence(s)
+    setInput("")
+    setWpm(0)
+    setAccuracy(100)
+    setState("running")
+    setStartTime(Date.now())
+    setTimeout(() => inputRef.current?.focus(), 50)
+  }
+
+  const handleInput = (value: string) => {
+    if (state !== "running") return
+    setInput(value)
+
+    const elapsed = (Date.now() - startTime) / 1000 / 60
+    const wordCount = value.trim().split(/\s+/).filter(Boolean).length
+    const currentWpm = elapsed > 0 ? Math.round(wordCount / elapsed) : 0
+    setWpm(currentWpm)
+
+    let correct = 0
+    for (let i = 0; i < value.length; i++) {
+      if (value[i] === sentence[i]) correct++
+    }
+    setAccuracy(value.length > 0 ? Math.round((correct / value.length) * 100) : 100)
+
+    if (value === sentence) {
+      setState("done")
+      if (currentWpm > bestWpm) {
+        setBestWpm(currentWpm)
+        localStorage.setItem(TYPING_BEST_KEY, String(currentWpm))
+      }
+    }
+  }
+
+  return (
+    <MiscCard className="pointer-only sm:col-span-2 flex-col">
+      <CardHeader icon={<Gauge className="size-4 text-accent" />} title="Typing Test" />
+
+      {state === "idle" && (
+        <div className="flex-1 flex flex-col items-center justify-center gap-3 py-4">
+          <p className="text-sm text-primary/60 text-center">
+            Test your typing speed with a short sentence.
+          </p>
+          <button
+            onClick={start}
+            className="bg-accent/15 text-accent hover:bg-accent/25 border border-accent/30 rounded-xl py-2 px-6 font-medium transition-all duration-150 active:scale-95 cursor-pointer text-sm"
+          >
+            Start
+          </button>
+          {bestWpm > 0 && (
+            <p className="text-xs font-mono text-primary/50">
+              Personal best: {bestWpm} WPM
+            </p>
+          )}
+        </div>
+      )}
+
+      {state === "running" && (
+        <div className="flex-1 flex flex-col gap-4 py-2">
+          <p className="text-sm text-primary/80 leading-relaxed font-mono tracking-wide">
+            {sentence.split("").map((char, i) => {
+              let color = "text-primary/40"
+              if (i < input.length) {
+                color = input[i] === char ? "text-accent" : "text-red-400"
+              }
+              return (
+                <span key={i} className={color}>
+                  {char}
+                </span>
+              )
+            })}
+          </p>
+          <input
+            ref={inputRef}
+            type="text"
+            value={input}
+            onChange={(e) => handleInput(e.target.value)}
+            spellCheck={false}
+            autoComplete="off"
+            autoCorrect="off"
+            className="w-full bg-primary/5 border border-primary/10 rounded-xl px-4 py-2.5 text-sm font-mono text-primary outline-none focus:border-accent/40 transition-colors"
+            placeholder="Start typing..."
+          />
+          <div className="flex justify-between text-xs font-mono text-primary/50">
+            <span>{wpm} WPM</span>
+            <span>{accuracy}% accuracy</span>
+          </div>
+        </div>
+      )}
+
+      {state === "done" && (
+        <div className="flex-1 flex flex-col items-center justify-center gap-3 py-4">
+          <div className="flex gap-6">
+            <div className="text-center">
+              <p className="text-4xl font-bold font-mono text-accent">{wpm}</p>
+              <p className="text-[11px] font-mono text-primary/50 uppercase mt-1">WPM</p>
+            </div>
+          </div>
+          {wpm >= bestWpm && bestWpm > 0 && (
+            <p className="text-xs text-accent font-medium">New personal best!</p>
+          )}
+          <button
+            onClick={start}
+            className="bg-accent/15 text-accent hover:bg-accent/25 border border-accent/30 rounded-xl py-2 px-6 font-medium transition-all duration-150 active:scale-95 cursor-pointer text-sm mt-2"
+          >
+            Try again
+          </button>
+          <p className="text-xs font-mono text-primary/50">
+            Best: {bestWpm} WPM
+          </p>
+        </div>
+      )}
+    </MiscCard>
+  )
+}
+
 // ─── Main Export ───────────────────────────────────────────
 export function MiscSection() {
   return (
@@ -374,9 +538,11 @@ export function MiscSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <ClickCounter />
         <LisbonClock />
+        <ThemeCard />
         <PixelCanvas />
         <DevQuote />
         <CoinFlip />
+        <TypingSpeedTest />
         <EasterEgg />
       </div>
     </div>

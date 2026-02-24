@@ -1,3 +1,5 @@
+export const DEFAULT_THEME = "mocha"
+export const DEFAULT_ACCENT = "sapphire"
 export const GM_FLOW_URL = "https://pt.linkedin.com/company/gmflow"
 export const JPRAC_URL = "https://jprac.xyz"
 export const GITHUB_PROFILE_URL = "https://github.com/m-santanna"

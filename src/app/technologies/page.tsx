@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import * as Logos from "@/components/logos"
 import { StyledSpan } from "@/components/styled-span"
 import { Cpu } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "MSS | Tech",
+  description: "Matheus's current favorite tech stack.",
+};
 
 type TechItem = {
   name: string
@@ -42,7 +48,7 @@ const CATEGORIES: Category[] = [
       { name: "Upstash", logo: "Upstash" },
       { name: "NeonDB", logo: "NeonDB" },
       { name: "Turso", logo: "Turso" },
-      { name: "DrizzleORM", logo: "DrizzleORM" },
+      { name: "DrizzleORM", logo: "Drizzle" },
       { name: "BetterAuth", logo: "BetterAuth" },
       { name: "JWT", logo: "JWT" },
     ],
@@ -65,10 +71,15 @@ const CATEGORIES: Category[] = [
 
 function TechnologiesPage() {
   return (
-    <div className="mx-8 sm:mx-30 space-y-10 mb-10">
-      <div className="mt-10 flex flex-col gap-2">
-        <h1 className="text-primary font-bold text-3xl flex items-center gap-2"><Cpu className="size-6 text-accent" />Technologies</h1>
-        <p className="text-foreground/70 text-base sm:text-lg">
+    <div className="space-y-10">
+      <div className="mt-6 flex flex-col items-center text-center gap-4">
+        <div className="bg-accent/10 p-3 rounded-full">
+          <Cpu className="size-8 text-accent" />
+        </div>
+        <h1 className="text-primary font-bold text-4xl tracking-tight">
+          Technologies
+        </h1>
+        <p className="text-foreground/70 text-lg">
           This is a collection of all the tech I am <StyledSpan text="currently" textOnHover="currently" className="cursor-default" /> using.
         </p>
       </div>

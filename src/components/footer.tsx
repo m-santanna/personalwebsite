@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <footer className="py-10 mt-20 relative overflow-hidden">
-      <div className="mx-3 sm:mx-30 flex flex-col items-center gap-8 relative">
+      <div className="max-w-5xl mx-auto px-8 sm:px-10 flex flex-col items-center gap-8 relative">
         <div className="flex gap-8 items-center">
           <Link
             href={GITHUB_PROFILE_URL}
@@ -46,11 +46,6 @@ function Footer() {
           <span>© {currentYear}</span>
           <span className="size-1 bg-accent/30 rounded-full" />
           <span className="text-foreground/60">Matheus S. Sant&apos;Anna</span>
-          <span className="size-1 bg-accent/30 rounded-full" />
-          <div className="flex gap-4">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Resume</a>
-            <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
-          </div>
         </div>
       </div>
     </footer>

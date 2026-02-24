@@ -8,7 +8,7 @@ import Link from "next/link"
 import { ChevronUp, ChevronDown } from "lucide-react"
 import { GM_FLOW_URL } from "@/lib/constants"
 import { StyledSpan } from "./styled-span"
-import { ProjectCarousel } from "./project-carousel"
+import ProjectSection from "@/components/project-section"
 
 type Tab = "Education" | "Experience" | "Projects"
 const ballsClassName = "absolute -left-1.5 top-2 w-2.5 h-2.5 rounded-full animate-in duration-300 transition-all fade-in"
@@ -20,7 +20,7 @@ export function InfoTabs() {
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex gap-4 items-end h-16">
+      <div className="flex gap-4 items-end h-8">
         {tabs.map((tab) => (
           <button
             key={tab}
@@ -121,7 +121,7 @@ export function InfoTabs() {
         )}
         {activeTab === "Projects" && (
           <div className="animate-in fade-in duration-500">
-            <ProjectCarousel />
+            <ProjectSection />
           </div>
         )}
       </div>
