@@ -336,7 +336,7 @@ function EasterEgg() {
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.metaKey && e.key === "k") {
+      if (e.metaKey && e.key === "k" || e.ctrlKey && e.key === "k") {
         e.preventDefault()
         setFound(true)
         fireConfetti()
