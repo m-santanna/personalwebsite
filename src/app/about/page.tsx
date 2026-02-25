@@ -25,7 +25,7 @@ const paragraphClassName = "max-w-2xl text-base sm:text-lg text-foreground leadi
 
 function Page() {
   return (
-    <div className="space-y-20 mb-6">
+    <div className="space-y-20 mb-6 max-w-2xl mx-auto">
       {/* // origin story */}
       <section className="space-y-4 mt-10 md:mt-22">
         <h2 className="font-mono text-xl sm:text-2xl text-accent font-semibold">
@@ -33,7 +33,7 @@ function Page() {
         </h2>
         <p className={paragraphClassName}>
           Notice that I will be yapping like crazy in this about page. Don't complain later saying I didn't warn you!! If you are not down
-          too see a young man's soul materialized into text, you should go to another page!
+          to see a young man's soul materialized into text, you should go to another page!
           We good? We good. Ok. With that one out of the way, let me see where to begin... <span className="line-through">I was born
             in <StyledLink href={GOOGLE_MAPS_ACRE_URL} text="Rio Branco, AC" /> in 2003</span> nah, too far back. <span className="line-through">
             I moved to <StyledLink href={GOOGLE_MAPS_POA_URL} text="Porto Alegre, RS" /> to follow my dreams of going to a big city

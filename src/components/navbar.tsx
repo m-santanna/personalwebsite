@@ -9,7 +9,7 @@ function DynamicPathname({ path }: { path: string }) {
   const segments = path.split('/').filter((s) => s !== "");
 
   return (
-    <div className="flex items-center gap-0.5 font-semibold text-base sm:text-lg">
+    <div className="flex items-center gap-0.5 font-semibold text-base lg:text-lg min-w-0 overflow-hidden">
       <Link href={'/'} className="hover:opacity-50 transition-all duration-500">
         <span className="text-accent">$HOME</span>
       </Link>
@@ -78,8 +78,8 @@ function UsefulLinks({ toggleSidebar }: { toggleSidebar: () => void }) {
       </div>
       <div className="hidden sm:flex gap-8 font-semibold text-sm items-center">
         <Link href={'/about'} className="hover:text-accent transition-all duration-500">About</Link >
-        <Link href={'/blog'} className="hover:text-accent transition-all duration-500">Blog</Link>
         <Link href={'/technologies'} className="hover:text-accent transition-all duration-500">Tech</Link>
+        <Link href={'/blog'} className="hover:text-accent transition-all duration-500">Blog</Link>
         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-500">Resume</a>
       </div>
     </>

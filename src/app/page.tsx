@@ -4,6 +4,7 @@ import { InfoTabs } from "@/components/info-tabs"
 import { MiscSection } from "@/components/misc-section"
 import Link from "next/link"
 import { FOLKYOURSELF_URL, GITHUB_PROFILE_URL, GM_FLOW_URL, INSTAGRAM_PROFILE_URL, JPRAC_URL, LINKEDIN_PROFILE_URL, RAFAELWITT_URL, EMAIL_ADDRESS } from "@/lib/constants"
+import { StyledLink } from "@/components/styled-link"
 
 const SOCIALS = [
   {
@@ -55,11 +56,13 @@ export default function Home() {
           </h1>
         </div>
         <p className="max-w-2xl text-base sm:text-lg">
-          I am a <span className="text-primary">Full-Stack Developer</span> that enjoys building stuff, and is currently based at Lisbon, Portugal.
+          I am a <span className="text-primary">Full-Stack Developer</span> that enjoys building stuff, and I am currently based at Lisbon, Portugal.
         </p>
         <p className="max-w-2xl text-base sm:text-lg">
-          I worked at <Link target="_blank" href={GM_FLOW_URL}><StyledSpan text="GM Flow" textOnHover="GM Flow" /></Link> and also took on freelance projects for websites like <Link target="_blank" href={RAFAELWITT_URL}><StyledSpan textOnHover="Rafael Witt" text="Rafael Witt" /></Link> and <Link target="_blank" href={FOLKYOURSELF_URL}><StyledSpan textOnHover="FolkYourself" text="FolkYourself" /></Link>.
-          Along the way, I built <Link target="_blank" href={JPRAC_URL}><StyledSpan textOnHover="jprac" text="jprac" /></Link>, which takes the spot as my personal favorite project.
+          I worked at <StyledLink href={GM_FLOW_URL} text="GM Flow" /> with
+          AI automations. Before this position, I took on freelance projects for websites
+          like <StyledLink href={RAFAELWITT_URL} text="Rafael Witt" /> and <StyledLink href={FOLKYOURSELF_URL} text="FolkYourself" />.
+          Along the way, I built <StyledLink href={JPRAC_URL} text="jprac" />, which takes the spot as my favorite personal project.
         </p>
         <Socials />
       </div>

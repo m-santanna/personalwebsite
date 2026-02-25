@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import * as Logos from "@/components/logos"
-import { StyledSpan } from "@/components/styled-span"
 import { Cpu } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -80,7 +79,7 @@ function TechnologiesPage() {
           Technologies
         </h1>
         <p className="text-foreground/70 text-lg">
-          This is a collection of all the tech I am <StyledSpan text="currently" textOnHover="currently" className="cursor-default" /> using.
+          This is a collection of all the tech I am currently using.
         </p>
       </div>
 

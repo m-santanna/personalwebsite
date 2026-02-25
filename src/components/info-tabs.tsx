@@ -4,11 +4,10 @@ import { useState } from "react"
 import { cn } from "@/lib/utils"
 import { Info } from "lucide-react"
 import { Tooltip } from "./tooltip"
-import Link from "next/link"
 import { ChevronUp, ChevronDown } from "lucide-react"
 import { GM_FLOW_URL } from "@/lib/constants"
-import { StyledSpan } from "./styled-span"
 import ProjectSection from "@/components/project-section"
+import { StyledLink } from "./styled-link"
 
 type Tab = "Education" | "Experience" | "Projects"
 const ballsClassName = "absolute -left-1.5 top-2 w-2.5 h-2.5 rounded-full animate-in duration-300 transition-all fade-in"
@@ -77,7 +76,7 @@ export function InfoTabs() {
               <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2 mt-1">
                 <h3 className="text-base sm:text-lg font-semibold text-primary leading-tight">Full Stack Developer Intern</h3>
                 <span className="text-primary/40 hidden sm:block">@</span>
-                <Link target="_blank" href={GM_FLOW_URL}><StyledSpan text="GM Flow" textOnHover="GM Flow" className="text-sm sm:text-base" /></Link>
+                <StyledLink href={GM_FLOW_URL} text="GM Flow" className="text-sm sm:text-base" />
               </div>
 
               <div className="mt-4 space-y-4 max-w-2xl text-primary/80 text-sm sm:text-base leading-relaxed">
