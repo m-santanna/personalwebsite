@@ -1,3 +1,4 @@
+export const INCREASE_CLICKS_CAP = 110
 export const DEFAULT_THEME = "mocha"
 export const DEFAULT_ACCENT = "sapphire"
 export const GM_FLOW_URL = "https://gmflow.pt"

@@ -6,8 +6,10 @@ import { Clock, Quote, Keyboard, Loader2, Grid3X3, CircleDot, Palette, Gauge } f
 import { cn } from "@/lib/utils"
 import confetti from "canvas-confetti"
 import ThemePicker from "./theme-picker"
+import { INCREASE_CLICKS_CAP } from "@/lib/constants"
 
-const STORAGE_KEY = "clicks"
+const LOCAL_CLICKS_KEY = "clicks"
+const UNSAVED_CLICKS_KEY = "unsaved-clicks"
 
 const DAILY_QUOTES = [
   `"It works on my machine."`,
@@ -19,14 +21,14 @@ const DAILY_QUOTES = [
   `"Debugging is like being the detective in a crime movie where you are also the murderer."`,
 ]
 
-function getStoredClicks(): number {
+function getStoredClicks(key: string): number {
   if (typeof window === "undefined") return 0
-  const stored = localStorage.getItem(STORAGE_KEY)
+  const stored = localStorage.getItem(key)
   return stored ? Number(stored) : 0
 }
 
-function setStoredClicks(count: number) {
-  localStorage.setItem(STORAGE_KEY, String(count))
+function setStoredClicks(key: string, count: number) {
+  localStorage.setItem(key, String(count))
 }
 
 function getLisbonDay(): number {
@@ -72,14 +74,35 @@ function ClickCounter() {
   const pendingRef = useRef(0)
 
   useEffect(() => {
-    setLocalClicks(getStoredClicks())
-    getGlobalClicks().then((count) => setGlobalClicks(count))
+    setLocalClicks(getStoredClicks(LOCAL_CLICKS_KEY))
+
+    // Even though this allows users to manually create the unsaved key in localStorage
+    // and inflate the value by the INCREASE_CLICKS_CAP, it is still better than losing 
+    // clicks on refresh or closing tabs
+    const unsaved = getStoredClicks(UNSAVED_CLICKS_KEY)
+    localStorage.removeItem(UNSAVED_CLICKS_KEY)
+
+    const loadGlobal = async () => {
+      if (unsaved > 0 && unsaved <= INCREASE_CLICKS_CAP) {
+        const updated = await increaseGlobalClicksBy(unsaved)
+        setGlobalClicks(updated)
+      }
+      else if (unsaved > INCREASE_CLICKS_CAP) {
+        const count = await increaseGlobalClicksBy(INCREASE_CLICKS_CAP)
+        setGlobalClicks(count)
+      }
+      else
+        setGlobalClicks(await getGlobalClicks())
+    }
+
+    loadGlobal()
   }, [])
 
   const flush = useCallback(async () => {
     const amount = pendingRef.current
     if (amount === 0) return
     pendingRef.current = 0
+    localStorage.removeItem(UNSAVED_CLICKS_KEY)
     const updated = await increaseGlobalClicksBy(amount)
     setGlobalClicks(updated)
   }, [])
@@ -87,10 +110,11 @@ function ClickCounter() {
   const handleClick = () => {
     const nextLocal = localClicks + 1
     setLocalClicks(nextLocal)
-    setStoredClicks(nextLocal)
+    setStoredClicks(LOCAL_CLICKS_KEY, nextLocal)
 
     setGlobalClicks((prev) => (prev !== null ? prev + 1 : prev))
     pendingRef.current += 1
+    setStoredClicks(UNSAVED_CLICKS_KEY, pendingRef.current)
   }
 
   return (
