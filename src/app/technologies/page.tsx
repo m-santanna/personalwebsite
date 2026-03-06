@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata } from "next"
 import * as Logos from "@/components/logos"
 import { Cpu } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "MSS | Tech",
   description: "Matheus's current favorite tech stack.",
-};
+}
 
 type TechItem = {
   name: string
@@ -94,7 +94,9 @@ function TechnologiesPage() {
             </h2>
             <div className="flex flex-wrap gap-x-6 gap-y-4">
               {category.items.map((item) => {
-                const Icon = Logos[item.logo] as React.FC<React.SVGProps<SVGSVGElement>>
+                const Icon = Logos[item.logo] as React.FC<
+                  React.SVGProps<SVGSVGElement>
+                >
                 return (
                   <div
                     key={item.logo}

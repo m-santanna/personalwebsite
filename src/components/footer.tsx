@@ -1,13 +1,17 @@
-import { GITHUB_PROFILE_URL, LINKEDIN_PROFILE_URL, INSTAGRAM_PROFILE_URL } from "@/lib/constants";
-import { Github, Instagram, LinkedIn } from "@/components/logos";
-import Link from "next/link";
+import {
+  GITHUB_PROFILE_URL,
+  LINKEDIN_PROFILE_URL,
+  INSTAGRAM_PROFILE_URL,
+} from "@/lib/constants"
+import { Github, Instagram, LinkedIn } from "@/components/logos"
+import Link from "next/link"
 
 function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="py-10 mt-20 relative overflow-hidden">
-      <div className="max-w-5xl mx-auto px-8 sm:px-10 flex flex-col items-center gap-8 relative">
+    <footer className="py-6 sm:py-10 mt-20 relative overflow-hidden">
+      <div className="max-w-5xl mx-auto px-8 sm:px-10 flex flex-col items-center gap-4 sm:gap-8 relative">
         <div className="flex gap-8 items-center">
           <Link
             href={GITHUB_PROFILE_URL}
